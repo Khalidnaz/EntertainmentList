@@ -1,16 +1,27 @@
 <template>
   <v-app id="inspire">
-    <SideDrawer v-bind:drawer='drawer' />
-    <Navbar v-bind:toggleDrawer='toggleSideDrawer'/>
+    <SideDrawer
+      v-bind:sideNav="sideNav"
+      v-bind:sideNavOptions="sideNavOptions"
+      v-bind:toggleSideDrawer="toggleSideDrawer"
+    />
 
-    <v-content>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-       
-      </v-container>
-    </v-content>
+    <Navbar
+      v-bind:user="user"
+      v-bind:sideNav="sideNav"
+      v-bind:toggleDrawer="toggleSideDrawer"
+    />
+
+	<!-- content -->
+    <main>
+      <v-content>
+        <v-container class="fill-height" fluid>
+          <transition name="fade">
+            <router-view />
+          </transition>
+        </v-container>
+      </v-content>
+    </main>
 
     <v-footer app>
       <span>&copy; 2020</span>
@@ -19,27 +30,31 @@
 </template>
 
 <script>
-  import Navbar from './components/Navigation/Navbar';
-  import SideDrawer from './components/Navigation/SideDrawer';
-  
-  export default {
-    components: {
-      Navbar,
-      SideDrawer
-    },
-    props: {
-      source: String,
-    },
-    data: () => ({
-      drawer: null,
-    }),
-    created () {
-      this.$vuetify.theme.dark = true
-    },
-    methods: {
-      toggleSideDrawer() {
-        this.drawer = !this.drawer;
-      }
+import { mapGetters } from 'vuex';
+import Navbar from './components/Navigation/Navbar';
+import SideDrawer from './components/Navigation/SideDrawer';
+
+export default {
+  components: {
+    Navbar,
+    SideDrawer
+  },
+  computed: {
+    ...mapGetters(['user']),
+    sideNavOptions() {
+      return [{ icon: 'mdi-view-dashboard', title: 'Movies', link: '/movies' }];
+    }
+  },
+  created() {
+    this.$vuetify.theme.dark = true;
+  },
+  data: () => ({
+    sideNav: false
+  }),
+  methods: {
+    toggleSideDrawer() {
+      this.sideNav = !this.sideNav;
     }
   }
+};
 </script>

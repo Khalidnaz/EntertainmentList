@@ -1,20 +1,17 @@
 <template>
-  <v-navigation-drawer v-model="sideDrawer" app clipped>
+  <v-navigation-drawer app clipped v-model="openSideNav">
     <v-list dense>
-      <v-list-item link>
+      <v-list-item
+        link
+        v-for="option in sideNavOptions"
+        v-bind:key="option.title"
+        v-bind:to="option.link"
+      >
         <v-list-item-action>
-          <v-icon>mdi-view-dashboard</v-icon>
+          <v-icon>{{ option.icon }}</v-icon>
         </v-list-item-action>
         <v-list-item-content>
-          <v-list-item-title>Movies</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-      <v-list-item link>
-        <v-list-item-action>
-          <v-icon>mdi-settings</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title>Settings</v-list-item-title>
+          <v-list-item-title>{{ option.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -23,16 +20,17 @@
 
 <script>
 export default {
-  name: "Navbar",
-  props: ["drawer"],
+  name: 'Navbar',
+  props: ['sideNav', 'sideNavOptions', 'toggleSideDrawer'],
   computed: {
-    sideDrawer() {
-      console.log('dd', this.drawer)
-      return this.drawer;
+    openSideNav: {
+      get() {
+        return this.sideNav;
+      },
+      set(val) {
+        this.$emit('sideNav', val);
+      }
     }
-  },
-  created() {
-    console.log("this", this);
   }
 };
 </script>

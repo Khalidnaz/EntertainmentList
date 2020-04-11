@@ -1,8 +1,8 @@
 <template>
   <v-container mt-5>
-    <v-row justify="center">
-      <h1>Register</h1>
-    </v-row>
+		<v-row justify='center'>
+			<h1>Welcome Back!</h1>
+		</v-row>
     <v-card class="mx-auto mt-5" color="secondary" dark max-width="800">
       <v-form v-model="isFormValid" lazy-validation ref="form">
         <v-row justify="center">
@@ -21,37 +21,11 @@
         <v-row justify="center">
           <v-col cols="6">
             <v-text-field
-              v-bind:rules="emailRules"
-              v-model="email"
-              prepend-icon="mdi-email"
-              label="Email"
-              type="email"
-              required
-            ></v-text-field>
-          </v-col>
-        </v-row>
-
-        <v-row justify="center">
-          <v-col cols="6">
-            <v-text-field
-              v-bind:rules="passwordRules"
-              v-model="password"
+              v-bind:rules="usernameRules"
+              v-model="username"
               prepend-icon="mdi-lock"
               label="Password"
-              type="password"
-              required
-            ></v-text-field>
-          </v-col>
-        </v-row>
-
-        <v-row justify="center">
-          <v-col cols="6">
-            <v-text-field
-              v-bind:rules="passwordRules"
-              v-model="confirmPassword"
-              prepend-icon="mdi-gavel"
-              label="Comfirm Password"
-              type="password"
+              type="text"
               required
             ></v-text-field>
           </v-col>
@@ -69,15 +43,15 @@
               <span slot="loader" class="custom-loader">
                 <v-icon light>mdi-cached</v-icon>
               </span>
-              Register
+              Sign in
             </v-btn>
           </v-col>
         </v-row>
         <v-row>
           <v-col col="6">
             <h3 class="text-center">
-              Already have an account?
-              <router-link to="/login">Sign In</router-link>
+              Don't have an account?
+              <router-link to="/register">Sign up</router-link>
             </h3>
           </v-col>
         </v-row>
@@ -90,47 +64,32 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'Register',
+  name: 'Login',
   computed: {
-    ...mapGetters(['error', 'loading', 'user'])
-  },
-  watch: {
-    user(value) {
-      if (value) {
-        this.$router.push('/');
-      }
-    }
+    ...mapGetters(['user', 'error', 'loading'])
   },
   data() {
     return {
-      isFormValid: true,
       username: '',
-      email: '',
       password: '',
-      confirmPassword: '',
+      // form validation rules, we set an array of conditions
       usernameRules: [
+        // check if username in input
         username => !!username || 'Username is required',
+        // make sure username is less than 10 characters
         username =>
-          username.length < 10 || 'Username cannot be more than 10 characters'
-      ],
-      emailRules: [
-        email => !!email || 'Email is required',
-        email => /.@+./.test(email) || 'Email must be valid'
+          username.length < 10 || 'Username must be less than 10 characters'
       ],
       passwordRules: [
         password => !!password || 'Password is required',
+        // Make sure password is at least 7 characters
         password =>
-          password.length >= 4 || 'Password must be at least 4 characters',
-        confirmation => confirmation === this.password || 'Password must match'
-      ]
+          password.length >= 7 || 'Password must be at least 7 characters'
+      ],
+      isFormValid: true
     };
-  },
-  methods: {
-    handleSignupUser() {
-      if (this.$refs.form.validate()) {
-        console.log('valid');
-      }
-    }
   }
 };
 </script>
+
+<style></style>
