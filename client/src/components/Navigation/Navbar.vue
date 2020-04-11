@@ -8,20 +8,57 @@
       <v-icon class="hidden-sm-only" left>mdi-login</v-icon>Sign In
     </v-btn>
 
-    <!-- or change this to a drop down with a settings option and logout -->
-    <!-- make a profile option -->
-    <v-btn text v-if="user" @click="handleSignout">
-      <v-icon class="hidden-sm-only" left>mdi-logout</v-icon>Sign out
-    </v-btn>
+    <v-menu v-if="user" bottom origin="center center" transition="scale-transition">
+      <template v-slot:activator="{ on }">
+        <v-btn text color="secondary" dark v-on="on">{{ user.name }}</v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item v-for="(item, i) in userOptions" :key="i" @click="item.callback">
+          <v-list-item-title>
+            <v-icon>{{ item.icon }}</v-icon>
+            {{ item.text }}
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
   </v-app-bar>
 </template>
 
 <script>
 export default {
-  name: 'Navbar',
-  props: ['user', 'toggleDrawer'],
+  name: "Navbar",
+  props: ["user", "toggleDrawer"],
+  computed: {
+    userOptions() {
+      if (this.user) {
+        return [
+          {
+            text: "Settings",
+            icon: "mdi-cog-outline",
+            callback: () => this.$router.push('/settings')
+          },
+          {
+            text: "Sign Out",
+            icon: "mdi-logout",
+            callback: () => this.handleSignout()
+          }
+        ];
+      } else {
+        return [];
+      }
+    }
+  },
+  data: () => ({
+    offsetY: true,
+    value: false,
+    closeOnContentClick: true,
+    closeOnClick: true
+  }),
   methods: {
-    handleSignout() {}
+    handleSignout() {
+      console.log("signout hit");
+    }
   }
 };
 </script>

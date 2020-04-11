@@ -6,6 +6,7 @@ import ProtectedRoute from './ProtectedRoute';
 import Register from './components/Auth/Register.vue';
 import Login from './components/Auth/Login.vue';
 import Movie from './components/Movies/Movie.vue';
+import Settings from './components/Settings/Settings.vue';
 
 Vue.use(Router);
 
@@ -27,6 +28,12 @@ export default new Router({
 			path: '/movies',
 			name: 'movies',
 			component: Movie,
+			beforeEnter: ProtectedRoute
+		},
+		{
+			path: '/settings',
+			name: 'settings',
+			component: Settings,
 			beforeEnter: ProtectedRoute
 		},
 	]
