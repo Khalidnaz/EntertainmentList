@@ -6,22 +6,16 @@
       v-bind:toggleSideDrawer="toggleSideDrawer"
     />
 
-    <Navbar
-      v-bind:user="user"
-      v-bind:sideNav="sideNav"
-      v-bind:toggleDrawer="toggleSideDrawer"
-    />
+    <Navbar v-bind:user="user" v-bind:sideNav="sideNav" v-bind:toggleDrawer="toggleSideDrawer" />
 
-	<!-- content -->
-    <main>
-      <v-content>
-        <v-container class="fill-height" fluid>
-          <transition name="fade">
-            <router-view />
-          </transition>
-        </v-container>
-      </v-content>
-    </main>
+    <!-- content -->
+    <v-content>
+      <v-container class="fill-height" fluid>
+        <transition name="fade">
+          <router-view />
+        </transition>
+      </v-container>
+    </v-content>
 
     <v-footer app>
       <span>&copy; 2020</span>
@@ -30,9 +24,9 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import Navbar from './components/Navigation/Navbar';
-import SideDrawer from './components/Navigation/SideDrawer';
+import { mapGetters } from "vuex";
+import Navbar from "./components/Navigation/Navbar";
+import SideDrawer from "./components/Navigation/SideDrawer";
 
 export default {
   components: {
@@ -40,9 +34,9 @@ export default {
     SideDrawer
   },
   computed: {
-    ...mapGetters(['user']),
+    ...mapGetters(["user"]),
     sideNavOptions() {
-      return [{ icon: 'mdi-view-dashboard', title: 'Movies', link: '/movies' }];
+      return [{ icon: "mdi-view-dashboard", title: "Movies", link: "/movies" }];
     }
   },
   created() {

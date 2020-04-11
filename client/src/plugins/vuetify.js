@@ -6,12 +6,16 @@ Vue.use(Vuetify);
 export default new Vuetify({
   iconfont: 'md',
   theme: {
-    primary: '#3B125F',
-    secondary: '#8B5FBF',
-		accent: '#E62E09',
-    error: '#722530',
-    warning: '#A37513',
-    info: '#396893',
-    success: '#4CAF50'
+   themes: {
+     dark: {
+      // primary: '#3B125F',
+      secondary: '#424242',
+      accent: '#E62E09',
+      error: '#F70528',
+      warning: '#A37513',
+      info: '#396893',
+      success: '#4CAF50'
+     }
+   }
   }
 });

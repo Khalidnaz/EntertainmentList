@@ -8,6 +8,7 @@
       <v-icon class="hidden-sm-only" left>mdi-login</v-icon>Sign In
     </v-btn>
 
+    <!-- or change this to a drop down with a settings option and logout -->
     <!-- make a profile option -->
     <v-btn text v-if="user" @click="handleSignout">
       <v-icon class="hidden-sm-only" left>mdi-logout</v-icon>Sign out

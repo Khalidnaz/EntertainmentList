@@ -13,6 +13,7 @@ const getters = {
 const actions = {
 	registerUser: ({ commit }, payload) => {
 		commit("setLoading", true);
+		console.log('payload', payload)
 	}
 }
 
