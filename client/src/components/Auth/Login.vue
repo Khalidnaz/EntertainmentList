@@ -1,8 +1,8 @@
 <template>
   <v-container mt-5>
-		<v-row justify='center'>
-			<h1>Welcome Back!</h1>
-		</v-row>
+    <v-row justify="center">
+      <h1>Welcome Back!</h1>
+    </v-row>
     <v-card class="mx-auto mt-5" color="secondary" dark max-width="800">
       <v-form v-model="isFormValid" lazy-validation ref="form">
         <v-row justify="center">
