@@ -8,13 +8,22 @@
       <v-icon class="hidden-sm-only" left>mdi-login</v-icon>Sign In
     </v-btn>
 
-    <v-menu v-if="user" bottom origin="center center" transition="scale-transition">
+    <v-menu
+      v-if="user"
+      bottom
+      origin="center center"
+      transition="scale-transition"
+    >
       <template v-slot:activator="{ on }">
         <v-btn text color="secondary" dark v-on="on">{{ user.name }}</v-btn>
       </template>
 
       <v-list>
-        <v-list-item v-for="(item, i) in userOptions" :key="i" @click="item.callback">
+        <v-list-item
+          v-for="(item, i) in userOptions"
+          :key="i"
+          @click="item.callback"
+        >
           <v-list-item-title>
             <v-icon>{{ item.icon }}</v-icon>
             {{ item.text }}
@@ -27,37 +36,26 @@
 
 <script>
 export default {
-  name: "Navbar",
-  props: ["user", "toggleDrawer"],
+  name: 'Navbar',
+  props: ['user', 'toggleDrawer'],
   computed: {
     userOptions() {
       if (this.user) {
         return [
           {
-            text: "Settings",
-            icon: "mdi-cog-outline",
+            text: 'Settings',
+            icon: 'mdi-cog-outline',
             callback: () => this.$router.push('/settings')
           },
           {
-            text: "Sign Out",
-            icon: "mdi-logout",
-            callback: () => this.handleSignout()
+            text: 'Sign Out',
+            icon: 'mdi-logout',
+            callback: () => this.$store.dispatch('logout')
           }
         ];
       } else {
         return [];
       }
-    }
-  },
-  data: () => ({
-    offsetY: true,
-    value: false,
-    closeOnContentClick: true,
-    closeOnClick: true
-  }),
-  methods: {
-    handleSignout() {
-      console.log("signout hit");
     }
   }
 };

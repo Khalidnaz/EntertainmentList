@@ -4,14 +4,19 @@
       <h1>Welcome Back!</h1>
     </v-row>
     <v-card class="mx-auto mt-5" color="secondary" dark max-width="800">
-      <v-form v-model="isFormValid" lazy-validation ref="form">
+      <v-form
+        v-bind:value="isFormValid"
+        lazy-validation
+        ref="form"
+        @submit.prevent="handleLogin"
+      >
         <v-row justify="center">
           <v-col cols="6">
             <v-text-field
-              v-bind:rules="usernameRules"
-              v-model="username"
+              v-bind:rules="emailRules"
+              v-model="email"
               prepend-icon="mdi-face"
-              label="Username"
+              label="Email Address"
               type="text"
               required
             ></v-text-field>
@@ -21,8 +26,8 @@
         <v-row justify="center">
           <v-col cols="6">
             <v-text-field
-              v-bind:rules="usernameRules"
-              v-model="username"
+              v-bind:rules="passwordRules"
+              v-model="password"
               prepend-icon="mdi-lock"
               label="Password"
               type="text"
@@ -33,16 +38,18 @@
 
         <v-row justify="center">
           <v-col cols="1">
+            <v-progress-circular
+							v-if='loading'
+              indeterminate
+              color="accent"
+            ></v-progress-circular>
             <v-btn
+							v-else
               v-bind:loading="loading"
               v-bind:disabled="!isFormValid || loading"
               color="accent"
               type="submit"
             >
-              <!-- This can be its own component -->
-              <span slot="loader" class="custom-loader">
-                <v-icon light>mdi-cached</v-icon>
-              </span>
               Sign in
             </v-btn>
           </v-col>
@@ -66,28 +73,28 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'Login',
   computed: {
-    ...mapGetters(['user', 'error', 'loading'])
+    ...mapGetters(['user', 'error', 'loading']),
+    isFormValid() {
+      return this.email.length > 0 && this.password.length > 0;
+    }
   },
   data() {
     return {
-      username: '',
+      email: '',
       password: '',
-      // form validation rules, we set an array of conditions
-      usernameRules: [
-        // check if username in input
-        username => !!username || 'Username is required',
-        // make sure username is less than 10 characters
-        username =>
-          username.length < 10 || 'Username must be less than 10 characters'
-      ],
-      passwordRules: [
-        password => !!password || 'Password is required',
-        // Make sure password is at least 7 characters
-        password =>
-          password.length >= 7 || 'Password must be at least 7 characters'
-      ],
-      isFormValid: true
+      emailRules: [email => !!email || 'Email is required'],
+      passwordRules: [password => !!password || 'Password is required']
     };
+  },
+  methods: {
+    handleLogin() {
+      if (this.$refs.form.validate()) {
+        this.$store.dispatch('login', {
+          email: this.email,
+          password: this.password
+        });
+      }
+    }
   }
 };
 </script>

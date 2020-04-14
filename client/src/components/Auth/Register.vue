@@ -4,14 +4,27 @@
       <h1>Register</h1>
     </v-row>
     <v-card class="mx-auto mt-5" color="secondary" dark max-width="800">
-      <v-form v-model="isFormValid" lazy-validation ref="form">
+      <v-form lazy-validation ref="form" @submit.prevent="handleRegister">
         <v-row justify="center">
           <v-col cols="6">
             <v-text-field
-              v-bind:rules="usernameRules"
-              v-model="username"
+              v-bind:rules="firstNameRules"
+              v-model="firstName"
               prepend-icon="mdi-face"
-              label="Username"
+              label="First Name"
+              type="text"
+              required
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+        <v-row justify="center">
+          <v-col cols="6">
+            <v-text-field
+              v-bind:rules="lastNameRules"
+              v-model="lastName"
+              prepend-icon="mdi-face"
+              label="Last Name"
               type="text"
               required
             ></v-text-field>
@@ -59,16 +72,17 @@
 
         <v-row justify="center">
           <v-col cols="1">
+            <v-progress-circular
+              v-if="loading"
+              indeterminate
+              color="accent"
+            ></v-progress-circular>
             <v-btn
-              v-bind:loading="loading"
-              v-bind:disabled="!isFormValid || loading"
+              v-else
+              v-bind:disabled="loading"
               color="accent"
               type="submit"
             >
-              <!-- This can be its own component -->
-              <span slot="loader" class="custom-loader">
-                <v-icon light>mdi-cached</v-icon>
-              </span>
               Register
             </v-btn>
           </v-col>
@@ -103,16 +117,13 @@ export default {
   },
   data() {
     return {
-      isFormValid: true,
-      username: '',
+      firstName: '',
+      lastName: '',
       email: '',
       password: '',
       confirmPassword: '',
-      usernameRules: [
-        username => !!username || 'Username is required',
-        username =>
-          username.length < 10 || 'Username cannot be more than 10 characters'
-      ],
+      firstNameRules: [firstName => !!firstName || 'First Name is required'],
+      lastNameRules: [lastName => !!lastName || 'Last Name is required'],
       emailRules: [
         email => !!email || 'Email is required',
         email => /.@+./.test(email) || 'Email must be valid'
@@ -126,9 +137,17 @@ export default {
     };
   },
   methods: {
-    handleSignupUser() {
-      if (this.$refs.form.validate()) {
-        console.log('valid');
+    handleRegister() {
+      if (
+        this.$refs.form.validate() &&
+        this.password === this.confirmPassword
+      ) {
+        this.$store.dispatch('registerUser', {
+          firstName: this.firstName,
+          lastName: this.lastName,
+          email: this.email,
+          password: this.password
+        });
       }
     }
   }

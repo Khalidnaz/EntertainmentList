@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app>
     <SideDrawer
       v-bind:sideNav="sideNav"
       v-bind:sideNavOptions="sideNavOptions"
