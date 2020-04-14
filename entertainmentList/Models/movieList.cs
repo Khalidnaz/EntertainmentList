@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace entertainmentList.Models
 {
-    public class movieList
+    public class MovieList
     {
         [Key]
         public int Id { get; set; }

@@ -1,3 +1,4 @@
+using entertainmentList.Models.DataModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace entertainmentList.Models
@@ -9,6 +10,8 @@ namespace entertainmentList.Models
             
         }
 
-        public DbSet<movieList> movieList { get; set; }
+        public DbSet<MovieList> MovieList { get; set; }
+
+				public DbSet<NewUser> Users { get; set; }
     }
 }
