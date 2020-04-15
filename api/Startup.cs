@@ -35,8 +35,9 @@ namespace EntertainmentList
 				options.AddPolicy(name: "AllowedOrigins",
 					builder =>
 					{
-						builder.WithOrigins("http://localhost:8080",
-																		"http://prodUrl");
+						builder.WithOrigins(
+							"http://localhost:8080",
+							"http://prodUrl");
 					});
 			});
 
@@ -62,11 +63,6 @@ namespace EntertainmentList
 			{
 				app.UseDeveloperExceptionPage();
 			}
-			else
-			{
-				app.UseExceptionHandler("/Home/Error");
-				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-			}
 
 			// Prod only configs
 			if (env.IsProduction())
@@ -75,13 +71,11 @@ namespace EntertainmentList
 				app.UseHttpsRedirection();
 			}
 
-			// app.UseStaticFiles();
-			// app.UseAuthorization();
-
 			app
 				.UseCors("AllowedOrigins")
-				.UseWebSockets()
 				.UseRouting()
+				//.UseAuthentication()
+				.UseWebSockets()
 				.UseGraphQL("/graphql")
 				.UsePlayground(new PlaygroundOptions { QueryPath = "/graphql", Path = "/graphql" })
 				.UseVoyager("/graphql");
