@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace entertainmentList.Migrations
+namespace EntertainmentList.Migrations
 {
     public partial class EntertainMentListDB : Migration
     {

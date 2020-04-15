@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace entertainmentList.Models
+namespace EntertainmentList.Models
 {
     public class MovieList
     {

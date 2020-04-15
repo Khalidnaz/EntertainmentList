@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using entertainmentList.Models;
-using entertainmentList.Models.DataModel;
+using EntertainmentList.Models;
+using EntertainmentList.Models.DataModel;
 using Microsoft.EntityFrameworkCore;
 
-namespace entertainmentList.Repositories
+namespace EntertainmentList.Repositories
 {
 	public class AuthRepository : IAuthRepository
 	{

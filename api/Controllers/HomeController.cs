@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using entertainmentList.Models;
+using EntertainmentList.Models;
 
-namespace entertainmentList.Controllers
+namespace EntertainmentList.Controllers
 {
     public class HomeController : Controller
     {

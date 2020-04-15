@@ -1,5 +1,5 @@
-using entertainmentList.Models;
-using entertainmentList.Repositories;
+using EntertainmentList.Models;
+using EntertainmentList.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +10,9 @@ using HotChocolate;
 using HotChocolate.AspNetCore;
 using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
-using entertainmentList.Types;
+using EntertainmentList.Types;
 
-namespace entertainmentList
+namespace EntertainmentList
 {
 	public class Startup
 	{

@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using entertainmentList.Models.DataModel;
-using entertainmentList.Repositories;
+using EntertainmentList.Models.DataModel;
+using EntertainmentList.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace entertainmentList.Controllers
+namespace EntertainmentList.Controllers
 {
 	[Route("/api/[controller]")]
 	[ApiController]

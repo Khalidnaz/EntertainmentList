@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace entertainmentList.Models.DataModel
+namespace EntertainmentList.Models.DataModel
 {
 	public class NewUser
 	{

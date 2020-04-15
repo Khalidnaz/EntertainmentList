@@ -1,4 +1,4 @@
-namespace entertainmentList
+namespace EntertainmentList
 {
 	public class Query
 	{
