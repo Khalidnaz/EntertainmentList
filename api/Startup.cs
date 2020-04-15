@@ -1,16 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using entertainmentList.Models;
 using entertainmentList.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using HotChocolate;
+using HotChocolate.AspNetCore;
+using HotChocolate.AspNetCore.Voyager;
+using HotChocolate.AspNetCore.Playground;
+using entertainmentList.Types;
 
 namespace entertainmentList
 {
@@ -28,7 +28,6 @@ namespace entertainmentList
 		{
 			services.AddDbContext<ApplicationDbContext>(options =>
 			 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-			services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 			services.AddCors(options =>
 			{
@@ -40,7 +39,24 @@ namespace entertainmentList
 					});
 			});
 
-				services.AddScoped<IAuthRepository, AuthRepository>();
+			services.AddScoped<IAuthRepository, AuthRepository>();
+			// Add in-memory event provider
+			// services.AddInMemorySubscriptionProvider();
+
+			services.AddGraphQL(sp => SchemaBuilder.New()
+			.AddServices(sp)
+
+			// Adds the authorize directive and
+			// enable the authorization middleware.
+			.AddAuthorizeDirectiveType()
+
+			.AddQueryType<QueryType>()
+			// .AddMutationType<MutationType>()
+			// .AddSubscriptionType<SubscriptionType>()
+			// .AddType<HumanType>()
+			// .AddType<DroidType>()
+			// .AddType<EpisodeType>()
+			.Create());
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,20 +79,16 @@ namespace entertainmentList
 				app.UseHttpsRedirection();
 			}
 
-			app.UseStaticFiles();
+			// app.UseStaticFiles();
+			// app.UseAuthorization();
 
-			app.UseRouting();
-
-			app.UseAuthorization();
-
-			app.UseEndpoints(endpoints =>
-			{
-				endpoints.MapControllerRoute(
-									name: "default",
-									pattern: "{controller=Home}/{action=Index}/{id?}");
-			});
-
-			app.UseCors("AllowedOrigins");
+			app
+				.UseCors("AllowedOrigins")
+				.UseWebSockets()
+				.UseRouting()
+				.UseGraphQL("/graphql")
+				.UsePlayground(new PlaygroundOptions { QueryPath = "/graphql", Path = "/graphql" })
+				.UseVoyager("/graphql");
 		}
 	}
 }
