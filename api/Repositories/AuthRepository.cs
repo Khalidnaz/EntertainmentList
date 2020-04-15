@@ -24,7 +24,7 @@ namespace EntertainmentList.Repositories
 			return false;
 		}
 
-		public async Task<NewUser> Register(NewUser user)
+		public async Task<User> Register(User user)
 		{
 			byte[] passwordHash;
 			byte[] passwordSalt;

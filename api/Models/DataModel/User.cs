@@ -3,7 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EntertainmentList.Models.DataModel
 {
-	public class NewUser
+
+	/// <summary>
+	/// A user for the app
+	/// </summary>
+
+	public class User
 	{
 		[Key]
 		public int Id { get; set; }
@@ -26,7 +31,7 @@ namespace EntertainmentList.Models.DataModel
 
 		public DateTime Created { get; set; }
 
-		public NewUser()
+		public User()
 		{
 			Created = DateTime.Now;
 		}

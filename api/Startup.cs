@@ -11,6 +11,7 @@ using HotChocolate.AspNetCore;
 using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
 using EntertainmentList.Types;
+using EntertainmentList.Mutations;
 
 namespace EntertainmentList
 {
@@ -40,9 +41,6 @@ namespace EntertainmentList
 			});
 
 			services.AddScoped<IAuthRepository, AuthRepository>();
-			// Add in-memory event provider
-			// services.AddInMemorySubscriptionProvider();
-
 			services.AddGraphQL(sp => SchemaBuilder.New()
 			.AddServices(sp)
 
@@ -51,11 +49,9 @@ namespace EntertainmentList
 			.AddAuthorizeDirectiveType()
 
 			.AddQueryType<QueryType>()
-			// .AddMutationType<MutationType>()
+			.AddMutationType<UserMutations>()
 			// .AddSubscriptionType<SubscriptionType>()
-			// .AddType<HumanType>()
-			// .AddType<DroidType>()
-			// .AddType<EpisodeType>()
+			.AddType<UserType>()
 			.Create());
 		}
 

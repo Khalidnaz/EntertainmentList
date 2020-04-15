@@ -6,6 +6,6 @@ namespace EntertainmentList.Repositories
 	public interface IAuthRepository
 	{
 		Task<bool> DoesUserExist(string email);
-		Task<NewUser> Register(NewUser user);
+		Task<User> Register(User user);
 	}
 }

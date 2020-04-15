@@ -17,7 +17,7 @@ namespace EntertainmentList.Controllers
 		}
 
 		[HttpPost("register")]
-		public async Task<IActionResult> Register(NewUser user)
+		public async Task<IActionResult> Register(User user)
 		{
 			if (!ModelState.IsValid)
 			{
