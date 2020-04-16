@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using EntertainmentList.Models.DataModel;
+using api.Models.DataModel;
 using EntertainmentList.Repositories;
 using HotChocolate;
 using HotChocolate.Execution;

@@ -1,4 +1,3 @@
-using EntertainmentList.Models.DataModel;
 using api.Models.DataModel;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,12 +9,12 @@ namespace EntertainmentList.Models
 		{
 
 		}
-		//will delete later, created for testing
-		public DbSet<MovieList> MovieList { get; set; }
 
 		public DbSet<User> Users { get; set; }
 
 		public DbSet<Movie> Movies { get; set; }
+		
+		public DbSet<TvShow> TvShows { get; set; }
 		
 	}
 }

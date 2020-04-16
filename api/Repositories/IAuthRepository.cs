@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using EntertainmentList.Models.DataModel;
+using api.Models.DataModel;
 
 namespace EntertainmentList.Repositories
 {

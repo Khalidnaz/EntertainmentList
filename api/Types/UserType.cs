@@ -1,5 +1,5 @@
 using System;
-using EntertainmentList.Models.DataModel;
+using api.Models.DataModel;
 using HotChocolate.Types;
 
 namespace EntertainmentList.Types

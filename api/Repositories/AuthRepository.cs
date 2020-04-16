@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using EntertainmentList.Models;
-using EntertainmentList.Models.DataModel;
+using api.Models.DataModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntertainmentList.Repositories

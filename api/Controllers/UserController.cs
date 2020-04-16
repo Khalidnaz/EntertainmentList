@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using EntertainmentList.Models.DataModel;
 using EntertainmentList.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using api.Models.DataModel;
 
 namespace EntertainmentList.Controllers
 {
