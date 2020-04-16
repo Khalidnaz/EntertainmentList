@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using EntertainmentList.Repositories;
+using api.Repositories;
 
-namespace EntertainmentList.Migrations
+namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200411035800_EntertainMentListDB")]
-    partial class EntertainMentListDB
+    [Migration("20200411035800_apiDB")]
+    partial class apiDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace EntertainmentList.Migrations
                 .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("entertainmentList.Models.movieList", b =>
+            modelBuilder.Entity("api.Models.movieList", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

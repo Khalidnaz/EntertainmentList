@@ -1,4 +1,4 @@
-using EntertainmentList.Repositories;
+using api.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -9,11 +9,10 @@ using HotChocolate;
 using HotChocolate.AspNetCore;
 using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
-using EntertainmentList.Types;
-using EntertainmentList.Mutations;
+using api.Types;
+using api.Mutations;
 
-
-namespace EntertainmentList
+namespace api
 {
 	public class Startup
 	{

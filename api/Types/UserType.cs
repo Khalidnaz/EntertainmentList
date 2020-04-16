@@ -1,8 +1,8 @@
 using System;
-using EntertainmentList.Models;
+using api.Models;
 using HotChocolate.Types;
 
-namespace EntertainmentList.Types
+namespace api.Types
 {
 	public class UserType : ObjectType<User>
 	{

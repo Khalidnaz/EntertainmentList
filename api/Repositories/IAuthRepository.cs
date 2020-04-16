@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using EntertainmentList.Models;
+using api.Models;
 
-namespace EntertainmentList.Repositories
+namespace api.Repositories
 {
 	public interface IAuthRepository
 	{

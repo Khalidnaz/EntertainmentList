@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
-using EntertainmentList.Models;
-using EntertainmentList.Repositories;
+using api.Models;
+using api.Repositories;
 using HotChocolate;
 using HotChocolate.Execution;
 using HotChocolate.Resolvers;
@@ -9,7 +9,7 @@ using HotChocolate.Types;
 
 // example https://github.com/ChilliCream/hotchocolate-examples/blob/master/workshop/src/Server/PureCodeFirst%2BEF/Users/UserMutations.cs
 
-namespace EntertainmentList.Mutations
+namespace api.Mutations
 {
 	[ExtendObjectType(Name = "Mutation")]
 	public class UserMutations

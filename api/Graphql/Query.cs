@@ -1,4 +1,4 @@
-namespace EntertainmentList.Graphql
+namespace api.Graphql
 {
 	public class Query
 	{

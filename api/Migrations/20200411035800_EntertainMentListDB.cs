@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace EntertainmentList.Migrations
+namespace api.Migrations
 {
-    public partial class EntertainMentListDB : Migration
+    public partial class apiDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

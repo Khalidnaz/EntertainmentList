@@ -1,10 +1,10 @@
 using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using EntertainmentList.Models;
+using api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntertainmentList.Repositories
+namespace api.Repositories
 {
 	public class AuthRepository : IAuthRepository
 	{

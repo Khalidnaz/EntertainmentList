@@ -1,9 +1,9 @@
-using EntertainmentList.Graphql;
+using api.Graphql;
 using HotChocolate.Types;
 
 // example here https://github.com/ChilliCream/hotchocolate/tree/master/examples/AspNetCore.StarWars
 
-namespace EntertainmentList.Types
+namespace api.Types
 {
 	public class QueryType : ObjectType<Query>
 	{
