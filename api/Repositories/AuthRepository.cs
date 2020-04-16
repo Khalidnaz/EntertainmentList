@@ -1,13 +1,23 @@
 using System;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using EntertainmentList.Models;
-using EntertainmentList.Models.DataModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntertainmentList.Repositories
 {
 	public class AuthRepository : IAuthRepository
 	{
+		/// <summary>
+		/// Size of salt
+		/// </summary>
+		private const int SaltSize = 16;
+
+		/// <summary>
+		/// Size of hash
+		/// </summary>
+		private const int HashSize = 20;
+
 		private readonly ApplicationDbContext _context;
 
 		public AuthRepository(ApplicationDbContext context)
@@ -24,42 +34,61 @@ namespace EntertainmentList.Repositories
 			return false;
 		}
 
-		public async Task<User> Register(User user)
+		public async Task<User> Register(User input)
 		{
-			byte[] passwordHash;
-			byte[] passwordSalt;
+			String hashedPassword = String.Empty;
 
-			CreatePasswordHash(user.Password, out passwordHash, out passwordSalt);
-			user.PasswordHash = passwordHash;
-			user.PasswordSalt = passwordSalt;
-			user.Password = String.Empty;
+			var newUser = new User()
+			{
+				FirstName = input.FirstName,
+				LastName = input.FirstName,
+				Email = input.Email,
+				Password = HashPassword(input.Password),
+			};
 
-			await _context.Users.AddAsync(user);
+			await _context.Users.AddAsync(newUser);
 			await _context.SaveChangesAsync();
-			return user;
+			return newUser;
 		}
 
-		private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+		private string HashPassword(string password)
 		{
-			using (var salt = new System.Security.Cryptography.HMACSHA512())
-			{
-				passwordSalt = salt.Key;
-				passwordHash = salt.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-			}
+			//create salt
+			byte[] salt;
+			new RNGCryptoServiceProvider().GetBytes(salt = new byte[SaltSize]);
+
+			//create hash for password
+			var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 1000);
+			var hash = pbkdf2.GetBytes(HashSize);
+
+			//combine salt and hash together into hashbytes
+			var hashBytes = new byte[36];
+			Array.Copy(salt, 0, hashBytes, 0, 16);
+			Array.Copy(hash, 0, hashBytes, 16, 20);
+
+			//create hashed password
+			string hashedPassword = Convert.ToBase64String(hashBytes);
+			return hashedPassword;
 		}
 
-		private bool VerifyPassword(string password, byte[] passwordHash, byte[] passwordSalt)
+		public bool ValidatePassword(string enteredPassword, string savedHashedPassword)
 		{
-			using (var salt = new System.Security.Cryptography.HMACSHA512(passwordSalt))
-			{
-				var computedHash = salt.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+			var hashBytes = Convert.FromBase64String(savedHashedPassword);
 
-				for (int i = 0; i < computedHash.Length; i++)
+			/* Get the salt */
+			var salt = new byte[16];
+			Array.Copy(hashBytes, 0, salt, 0, 16);
+
+			/* Compute the hash on the password the user entered */
+			var pbkdf2 = new Rfc2898DeriveBytes(enteredPassword, salt, 1000);
+			var hash = pbkdf2.GetBytes(20);
+
+			/* Compare the results */
+			for (int i = 0; i < 20; i++)
+			{
+				if (hashBytes[i + 16] != hash[i])
 				{
-					if (computedHash[i] != passwordHash[i])
-					{
-						return false;
-					}
+					return false;
 				}
 			}
 			return true;

@@ -1,4 +1,3 @@
-using EntertainmentList.Models;
 using EntertainmentList.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +11,7 @@ using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
 using EntertainmentList.Types;
 using EntertainmentList.Mutations;
+
 
 namespace EntertainmentList
 {
@@ -48,10 +48,15 @@ namespace EntertainmentList
 			// Adds the authorize directive and
 			// enable the authorization middleware.
 			.AddAuthorizeDirectiveType()
-
+			// .AddDocumentFromString(
+			// 	@"
+      //   type Query {
+      //       hello: String
+      //   }"
+			// )
+			// .BindComplexType<Query>()
 			.AddQueryType<QueryType>()
 			.AddMutationType<UserMutations>()
-			// .AddSubscriptionType<SubscriptionType>()
 			.AddType<UserType>()
 			.Create());
 		}

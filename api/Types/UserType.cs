@@ -1,5 +1,5 @@
 using System;
-using EntertainmentList.Models.DataModel;
+using EntertainmentList.Models;
 using HotChocolate.Types;
 
 namespace EntertainmentList.Types
@@ -20,11 +20,11 @@ namespace EntertainmentList.Types
 			descriptor.Field(f => f.Email)
 				.Type<StringType>();
 
-			descriptor.Field(f => f.PasswordHash)
-				.Type<ListType<ByteType>>();
+			// descriptor.Field(f => f.PasswordHash)
+			// 	.Type<ListType<ByteType>>();
 
-			descriptor.Field(f => f.PasswordSalt)
-			.Type<ListType<ByteType>>();
+			// descriptor.Field(f => f.PasswordSalt)
+			// .Type<ListType<ByteType>>();
 
 			descriptor.Field(f => f.Created)
 				.Type<DateType>();

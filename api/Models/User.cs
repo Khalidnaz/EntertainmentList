@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EntertainmentList.Models.DataModel
+namespace EntertainmentList.Models
 {
 
 	/// <summary>

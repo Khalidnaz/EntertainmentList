@@ -1,7 +1,7 @@
-using EntertainmentList.Models.DataModel;
+using EntertainmentList.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntertainmentList.Models
+namespace EntertainmentList.Repositories
 {
 	public class ApplicationDbContext : DbContext
 	{
