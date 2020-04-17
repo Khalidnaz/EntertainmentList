@@ -34,7 +34,7 @@ namespace api.Repositories
 			return false;
 		}
 
-		public async Task<User> Register(User input)
+		public async Task<User> Register(UserInput input)
 		{
 			String hashedPassword = String.Empty;
 

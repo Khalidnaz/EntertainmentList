@@ -10,7 +10,6 @@ using HotChocolate.AspNetCore;
 using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
 using api.Types;
-using api.Mutations;
 
 namespace api
 {
@@ -47,16 +46,10 @@ namespace api
 			// Adds the authorize directive and
 			// enable the authorization middleware.
 			.AddAuthorizeDirectiveType()
-			// .AddDocumentFromString(
-			// 	@"
-      //   type Query {
-      //       hello: String
-      //   }"
-			// )
-			// .BindComplexType<Query>()
 			.AddQueryType<QueryType>()
-			.AddMutationType<UserMutations>()
+			.AddMutationType<MutationType>()
 			.AddType<UserType>()
+			.AddType<UserInputType>()
 			.Create());
 		}
 

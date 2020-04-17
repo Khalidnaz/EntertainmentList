@@ -9,7 +9,7 @@ namespace api.Types
 		protected override void Configure(IObjectTypeDescriptor<User> descriptor)
 		{
 			descriptor.Field(f => f.Id)
-				.Type<IntType>();
+				.Type<IdType>();
 
 			descriptor.Field(f => f.FirstName)
 				.Type<StringType>();
@@ -20,11 +20,8 @@ namespace api.Types
 			descriptor.Field(f => f.Email)
 				.Type<StringType>();
 
-			// descriptor.Field(f => f.PasswordHash)
-			// 	.Type<ListType<ByteType>>();
-
-			// descriptor.Field(f => f.PasswordSalt)
-			// .Type<ListType<ByteType>>();
+			descriptor.Field(f => f.Password)
+				.Type<StringType>();
 
 			descriptor.Field(f => f.Created)
 				.Type<DateType>();

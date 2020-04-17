@@ -7,10 +7,10 @@ namespace api.Repositories
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
 		{
-
+			
 		}
 
-		public DbSet<MovieList> MovieList { get; set; }
+		public DbSet<Movie> Movies { get; set; }
 
 		public DbSet<User> Users { get; set; }
 	}

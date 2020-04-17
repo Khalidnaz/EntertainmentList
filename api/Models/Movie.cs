@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace api.Models
 {
-	public class MovieList
+	public class Movie
 	{
 		[Key]
 		public Guid Id { get; set; }
 		
-		[Required]
 		public string MovieName { get; set; }
 		
 		public int ReleaseDate { get; set; }
