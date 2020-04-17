@@ -1,5 +1,4 @@
-using EntertainmentList.Models;
-using EntertainmentList.Repositories;
+using api.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -10,10 +9,9 @@ using HotChocolate;
 using HotChocolate.AspNetCore;
 using HotChocolate.AspNetCore.Voyager;
 using HotChocolate.AspNetCore.Playground;
-using EntertainmentList.Types;
-using EntertainmentList.Mutations;
+using api.Types;
 
-namespace EntertainmentList
+namespace api
 {
 	public class Startup
 	{
@@ -48,11 +46,10 @@ namespace EntertainmentList
 			// Adds the authorize directive and
 			// enable the authorization middleware.
 			.AddAuthorizeDirectiveType()
-
 			.AddQueryType<QueryType>()
-			.AddMutationType<UserMutations>()
-			// .AddSubscriptionType<SubscriptionType>()
+			.AddMutationType<MutationType>()
 			.AddType<UserType>()
+			.AddType<UserInputType>()
 			.Create());
 		}
 

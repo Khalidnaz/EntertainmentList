@@ -1,10 +1,9 @@
 using System;
 using System.Threading.Tasks;
-using api.Models.DataModel;
-using EntertainmentList.Repositories;
+using api.Models;
+using api.Repositories;
 using HotChocolate;
 using HotChocolate.Execution;
-using HotChocolate.Resolvers;
 using HotChocolate.Types;
 
 // example https://github.com/ChilliCream/hotchocolate-examples/blob/master/workshop/src/Server/PureCodeFirst%2BEF/Users/UserMutations.cs
@@ -24,7 +23,7 @@ namespace EntertainmentList.Mutations
 		/// <summary>
 		/// Creates a new user.
 		/// </summary>
-		public async Task<User> AddNewUser(User user)
+		public async Task<User> AddNewUser(UserInput user)
 		{
 			if (await _repo.DoesUserExist(user.Email))
 			{

@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
-using api.Models.DataModel;
+using api.Models;
 
-namespace EntertainmentList.Repositories
+namespace api.Repositories
 {
 	public interface IAuthRepository
 	{
 		Task<bool> DoesUserExist(string email);
-		Task<User> Register(User user);
+		Task<User> Register(UserInput user);
 	}
 }

@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace api.Models.DataModel
+namespace api.Models
 {
 
 	/// <summary>
@@ -11,25 +11,20 @@ namespace api.Models.DataModel
 	public class User
 	{
 		[Key]
-		public int Id { get; set; }
-		[Required]
+		public Guid Id { get; set; }
+
 		public string FirstName { get; set; }
 
-		[Required]
 		public string LastName { get; set; }
 
-		[Required]
 		public string Email { get; set; }
 
-		[Required]
-		[StringLength(8, MinimumLength = 4, ErrorMessage = "You must specify a password between 4 and 8 characters")]
 		public string Password { get; set; }
 
-		public byte[] PasswordHash { get; set; }
-
-		public byte[] PasswordSalt { get; set; }
-
 		public DateTime Created { get; set; }
+
+		//add movies props
+		//public IEnumerable MyMovies { get; set; }
 
 		public User()
 		{
