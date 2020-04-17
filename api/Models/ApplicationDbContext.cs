@@ -10,11 +10,11 @@ namespace EntertainmentList.Models
 
 		}
 
-		public DbSet<User> Users { get; set; }
+		public DbSet<User> users { get; set; }
 
-		public DbSet<Movie> Movies { get; set; }
+		public DbSet<Movie> movies { get; set; }
 		
-		public DbSet<TvShow> TvShows { get; set; }
+		public DbSet<TvShow> tvshows { get; set; }
 		
 	}
 }

@@ -17,7 +17,7 @@ namespace EntertainmentList.Repositories
 
 		public async Task<bool> DoesUserExist(string email)
 		{
-			if (await _context.Users.AnyAsync(x => x.Email == email))
+			if (await _context.users.AnyAsync(x => x.Email == email))
 			{
 				return true;
 			}
@@ -34,7 +34,7 @@ namespace EntertainmentList.Repositories
 			user.PasswordSalt = passwordSalt;
 			user.Password = String.Empty;
 
-			await _context.Users.AddAsync(user);
+			await _context.users.AddAsync(user);
 			await _context.SaveChangesAsync();
 			return user;
 		}
