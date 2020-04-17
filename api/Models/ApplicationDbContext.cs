@@ -1,4 +1,4 @@
-using api.Models.DataModel;
+using api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntertainmentList.Models
