@@ -21,8 +21,8 @@ namespace api.Graphql
 			{
 				throw new QueryException(
 					ErrorBuilder.New()
-						.SetMessage("Email cannot be empty.")
-						.SetCode("EMAIL_EMPTY")
+						.SetMessage("Email is already being used.")
+						.SetCode("EMAIL_EXIST")
 						.Build());
 			}
 

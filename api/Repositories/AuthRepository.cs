@@ -41,7 +41,7 @@ namespace api.Repositories
 			var newUser = new User()
 			{
 				FirstName = input.FirstName,
-				LastName = input.FirstName,
+				LastName = input.LastName,
 				Email = input.Email,
 				Password = HashPassword(input.Password),
 			};
