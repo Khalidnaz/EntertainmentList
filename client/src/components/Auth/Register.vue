@@ -106,14 +106,14 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'Register',
   computed: {
-    ...mapGetters(['error', 'loading', 'user'])
+    ...mapGetters(['error', 'loading', 'user']),
   },
   watch: {
     user(value) {
       if (value) {
         this.$router.push('/');
       }
-    }
+    },
   },
   data() {
     return {
@@ -122,18 +122,19 @@ export default {
       email: '',
       password: '',
       confirmPassword: '',
-      firstNameRules: [firstName => !!firstName || 'First Name is required'],
-      lastNameRules: [lastName => !!lastName || 'Last Name is required'],
+      firstNameRules: [(firstName) => !!firstName || 'First Name is required'],
+      lastNameRules: [(lastName) => !!lastName || 'Last Name is required'],
       emailRules: [
-        email => !!email || 'Email is required',
-        email => /.@+./.test(email) || 'Email must be valid'
+        (email) => !!email || 'Email is required',
+        (email) => /.@+./.test(email) || 'Email must be valid',
       ],
       passwordRules: [
-        password => !!password || 'Password is required',
-        password =>
+        (password) => !!password || 'Password is required',
+        (password) =>
           password.length >= 4 || 'Password must be at least 4 characters',
-        confirmation => confirmation === this.password || 'Password must match'
-      ]
+        (confirmation) =>
+          confirmation === this.password || 'Password must match',
+      ],
     };
   },
   methods: {
@@ -146,10 +147,10 @@ export default {
           firstName: this.firstName,
           lastName: this.lastName,
           email: this.email,
-          password: this.password
-        });
+          password: this.password,
+				});
       }
     }
-  }
+  },
 };
 </script>

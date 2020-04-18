@@ -9,17 +9,19 @@ Vue.use(VueApollo);
 // HTTP connection to the API
 const httpLink = createHttpLink({
   // You should use an absolute URL here
-  // need to update this
-  uri: 'http://localhost:5000/graphql'
+	uri: 'http://localhost:5000/graphql',
+	headers: {
+		authorization: localStorage.getItem('token'),
+  },
 });
 
 // Cache implementation
 const cache = new InMemoryCache();
 
 // Create the apollo client
-const apolloClient = new ApolloClient({
+export const apolloClient = new ApolloClient({
   link: httpLink,
-  cache
+	cache,
 });
 
 const apolloProvider = new VueApollo({

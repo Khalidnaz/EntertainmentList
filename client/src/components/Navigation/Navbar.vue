@@ -15,7 +15,9 @@
       transition="scale-transition"
     >
       <template v-slot:activator="{ on }">
-        <v-btn text color="secondary" dark v-on="on">{{ user.name }}</v-btn>
+        <v-btn text color="white" dark v-on="on"
+          >Hello {{ user.firstName }}</v-btn
+        >
       </template>
 
       <v-list>
@@ -45,18 +47,18 @@ export default {
           {
             text: 'Settings',
             icon: 'mdi-cog-outline',
-            callback: () => this.$router.push('/settings')
+            callback: () => this.$router.push('/settings'),
           },
           {
             text: 'Sign Out',
             icon: 'mdi-logout',
-            callback: () => this.$store.dispatch('logout')
-          }
+            callback: () => this.$store.dispatch('logout'),
+          },
         ];
       } else {
         return [];
       }
-    }
-  }
+    },
+  },
 };
 </script>

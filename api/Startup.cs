@@ -28,21 +28,11 @@ namespace api
 			services.AddDbContext<ApplicationDbContext>(options =>
 			 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
-			services.AddCors(options =>
-			{
-				options.AddPolicy(name: "AllowedOrigins",
-					builder =>
-					{
-						builder.WithOrigins(
-							"http://localhost:8080",
-							"http://prodUrl");
-					});
-			});
+			services.AddCors();
 
 			services.AddScoped<IAuthRepository, AuthRepository>();
 			services.AddGraphQL(sp => SchemaBuilder.New()
 			.AddServices(sp)
-
 			// Adds the authorize directive and
 			// enable the authorization middleware.
 			.AddAuthorizeDirectiveType()
@@ -68,8 +58,12 @@ namespace api
 				app.UseHttpsRedirection();
 			}
 
+			app.UseCors(o => o
+				.AllowAnyHeader()
+				.AllowAnyMethod()
+				.AllowAnyOrigin());
+
 			app
-				.UseCors("AllowedOrigins")
 				.UseRouting()
 				//.UseAuthentication()
 				.UseWebSockets()
