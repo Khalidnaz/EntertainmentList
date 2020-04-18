@@ -2,12 +2,13 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using api.Repositories;
 
 namespace EntertainmentList.Migrations
 {
-	[DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -20,25 +21,43 @@ namespace EntertainmentList.Migrations
 
             modelBuilder.Entity("api.Models.Movie", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("MovieID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("text");
+
+                    b.Property<double>("UserScore")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("MovieID");
+
+                    b.ToTable("movies");
+                });
+
+            modelBuilder.Entity("api.Models.TvShow", b =>
+                {
+                    b.Property<Guid>("TvShowID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string[]>("Genres")
-                        .HasColumnType("text[]");
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("timestamp without time zone");
 
-                    b.Property<string>("MovieName")
+                    b.Property<string>("Title")
                         .HasColumnType("text");
 
-                    b.Property<int>("Rating")
-                        .HasColumnType("integer");
+                    b.Property<double>("UserScore")
+                        .HasColumnType("double precision");
 
-                    b.Property<int>("ReleaseDate")
-                        .HasColumnType("integer");
+                    b.HasKey("TvShowID");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Movies");
+                    b.ToTable("tvshows");
                 });
 
             modelBuilder.Entity("api.Models.User", b =>

@@ -6,7 +6,7 @@ namespace api.Models
 	public class TvShow
 	{
 		[Key]
-		public int TvShowID { get; set; }
+		public Guid TvShowID { get; set; }
 		
 		public string Title { get; set; }
 
