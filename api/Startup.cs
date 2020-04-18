@@ -40,6 +40,8 @@ namespace api
 			.AddMutationType<MutationType>()
 			.AddType<UserType>()
 			.AddType<UserInputType>()
+			.AddType<LoginUserType>()
+			.AddType<AuthUserType>()
 			.Create());
 		}
 

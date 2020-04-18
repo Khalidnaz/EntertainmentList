@@ -7,5 +7,6 @@ namespace api.Repositories
 	{
 		Task<bool> DoesUserExist(string email);
 		Task<User> Register(UserInput user);
+		Task<User> AuthenticateUser(LoginUserInput input);
 	}
 }
