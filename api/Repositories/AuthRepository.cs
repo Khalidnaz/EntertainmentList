@@ -102,7 +102,7 @@ namespace api.Repositories
       return hashedPassword;
     }
 
-    public bool ValidatePassword(string enteredPassword, string savedHashedPassword)
+    private bool ValidatePassword(string enteredPassword, string savedHashedPassword)
     {
       var hashBytes = Convert.FromBase64String(savedHashedPassword);
 

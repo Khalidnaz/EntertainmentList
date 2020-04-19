@@ -6,12 +6,14 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 
 Vue.use(VueApollo);
 
+const user = JSON.parse(localStorage.getItem('user'));
+
 // HTTP connection to the API
 const httpLink = createHttpLink({
   // You should use an absolute URL here
-	uri: 'http://localhost:5000/graphql',
-	headers: {
-		authorization: `Bearer ${localStorage.getItem('token')}`,
+  uri: 'http://localhost:5000/graphql',
+  headers: {
+    authorization: `Bearer ${user.token || ''}`,
   },
 });
 
@@ -21,11 +23,11 @@ const cache = new InMemoryCache();
 // Create the apollo client
 export const apolloClient = new ApolloClient({
   link: httpLink,
-	cache,
+  cache,
 });
 
 const apolloProvider = new VueApollo({
-  defaultClient: apolloClient
+  defaultClient: apolloClient,
 });
 
 export default apolloProvider;
