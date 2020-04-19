@@ -10,6 +10,10 @@ namespace api.Types
 			descriptor.Field(t => t.CreateUser(default))
 				.Type<NonNullType<UserType>>()
 				.Argument("user", a => a.Type<NonNullType<UserInputType>>());
+
+			descriptor.Field(t => t.Login(default))
+				.Type<NonNullType<AuthUserType>>()
+				.Argument("input", a => a.Type<NonNullType<LoginUserType>>());
 		}
 	}
 }

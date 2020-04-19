@@ -30,7 +30,7 @@
               v-model="password"
               prepend-icon="mdi-lock"
               label="Password"
-              type="text"
+              type="password"
               required
             ></v-text-field>
           </v-col>
@@ -39,12 +39,12 @@
         <v-row justify="center">
           <v-col cols="1">
             <v-progress-circular
-							v-if='loading'
+              v-if="loading"
               indeterminate
               color="accent"
             ></v-progress-circular>
             <v-btn
-							v-else
+              v-else
               v-bind:loading="loading"
               v-bind:disabled="!isFormValid || loading"
               color="accent"
@@ -76,14 +76,21 @@ export default {
     ...mapGetters(['user', 'error', 'loading']),
     isFormValid() {
       return this.email.length > 0 && this.password.length > 0;
-    }
+    },
+  },
+  watch: {
+    user(value) {
+      if (value) {
+        this.$router.push('/');
+      }
+    },
   },
   data() {
     return {
       email: '',
       password: '',
-      emailRules: [email => !!email || 'Email is required'],
-      passwordRules: [password => !!password || 'Password is required']
+      emailRules: [(email) => !!email || 'Email is required'],
+      passwordRules: [(password) => !!password || 'Password is required'],
     };
   },
   methods: {
@@ -91,11 +98,11 @@ export default {
       if (this.$refs.form.validate()) {
         this.$store.dispatch('login', {
           email: this.email,
-          password: this.password
+          password: this.password,
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

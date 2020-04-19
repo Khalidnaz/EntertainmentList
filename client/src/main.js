@@ -12,5 +12,12 @@ new Vue({
   store,
   vuetify,
   apolloProvider,
-  render: h => h(App)
+  render: (h) => h(App),
+  created() {
+    const user = localStorage.getItem('user');
+
+    if (user) {
+      this.$store.commit('setUser', JSON.parse(user));
+    }
+  },
 }).$mount('#app');

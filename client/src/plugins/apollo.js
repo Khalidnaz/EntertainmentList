@@ -11,7 +11,7 @@ const httpLink = createHttpLink({
   // You should use an absolute URL here
 	uri: 'http://localhost:5000/graphql',
 	headers: {
-		authorization: localStorage.getItem('token'),
+		authorization: `Bearer ${localStorage.getItem('token')}`,
   },
 });
 

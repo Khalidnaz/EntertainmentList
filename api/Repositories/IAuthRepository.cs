@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using api.Models;
+using api.Models.Users;
 
 namespace api.Repositories
 {
@@ -7,5 +7,6 @@ namespace api.Repositories
 	{
 		Task<bool> DoesUserExist(string email);
 		Task<User> Register(UserInput user);
+		Task<User> AuthenticateUser(LoginUserInput input);
 	}
 }
