@@ -1,7 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using api.Models;
+using api.Models.Users;
 using HotChocolate;
 using HotChocolate.Execution;
 using Microsoft.EntityFrameworkCore;
@@ -102,7 +102,7 @@ namespace api.Repositories
       return hashedPassword;
     }
 
-    public bool ValidatePassword(string enteredPassword, string savedHashedPassword)
+    private bool ValidatePassword(string enteredPassword, string savedHashedPassword)
     {
       var hashBytes = Convert.FromBase64String(savedHashedPassword);
 

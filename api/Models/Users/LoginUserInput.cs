@@ -1,6 +1,6 @@
 using HotChocolate;
 
-namespace api.Models
+namespace api.Models.Users
 {
   public class LoginUserInput
   {
