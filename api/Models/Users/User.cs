@@ -1,7 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using HotChocolate.AspNetCore.Authorization;
 
-namespace api.Models
+namespace api.Models.Users
 {
 
 	/// <summary>

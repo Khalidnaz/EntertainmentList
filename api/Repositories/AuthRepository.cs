@@ -1,7 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using api.Models;
+using api.Models.Users;
 using HotChocolate;
 using HotChocolate.Execution;
 using Microsoft.EntityFrameworkCore;

@@ -20,7 +20,7 @@ namespace api.Types
 			// // identity has a country
 			// descriptor.Field(t => t.Search(default))
 			// 		.Type<ListType<SearchResultType>>()
-			// 		.Authorize("HasCountry");
+			// 		.Authorize("IsUser");
 		}
 	}
 }

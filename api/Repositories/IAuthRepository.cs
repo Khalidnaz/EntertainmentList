@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using api.Models;
+using api.Models.Users;
 
 namespace api.Repositories
 {

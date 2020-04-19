@@ -1,7 +1,7 @@
 using System;
 using Microsoft.IdentityModel.Tokens;
 
-namespace api.Models
+namespace api.Models.Users
 {
   public class AuthUser
   {
