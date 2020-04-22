@@ -5,7 +5,8 @@ import router from '../../router';
 const state = {
   user: null,
   loading: false,
-  error: null,
+	error: null,
+	watchList: []
 };
 
 const getters = {

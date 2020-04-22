@@ -35,24 +35,29 @@ import SideDrawer from './components/Navigation/SideDrawer';
 export default {
   components: {
     Navbar,
-    SideDrawer
+    SideDrawer,
   },
   computed: {
     ...mapGetters(['user']),
     sideNavOptions() {
-      return [{ icon: 'mdi-view-dashboard', title: 'Movies', link: '/movies' }];
-    }
+      return [
+        { icon: 'mdi-view-dashboard', title: 'Now Playing', link: '/' },
+				{ icon: 'mdi-view-dashboard', title: 'Top Rated', link: '/topRated' },
+				{ icon: 'mdi-view-dashboard', title: 'Upcoming', link: '/upcoming' },
+				{ icon: 'mdi-view-dashboard', title: 'My Watch List', link: '/watchlist' },
+      ];
+    },
   },
   created() {
-    this.$vuetify.theme.dark = true;
+		this.$vuetify.theme.dark = true;
   },
   data: () => ({
-    sideNav: false
+    sideNav: false,
   }),
   methods: {
     toggleSideDrawer() {
       this.sideNav = !this.sideNav;
-    }
-  }
+    },
+  },
 };
 </script>
