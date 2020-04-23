@@ -5,7 +5,8 @@ import router from '../../router';
 const state = {
   user: null,
   loading: false,
-  error: null,
+	error: null,
+	watchList: []
 };
 
 const getters = {
@@ -47,6 +48,10 @@ const actions = {
     }
   },
   logout: ({ commit }) => commit('clearUser'),
+
+  // fetchWatchList: async ({ commit }) => {
+
+  // }
 };
 
 const mutations = {

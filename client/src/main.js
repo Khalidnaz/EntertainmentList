@@ -14,10 +14,10 @@ new Vue({
   apolloProvider,
   render: (h) => h(App),
   created() {
-    const user = localStorage.getItem('user');
-
+		const user = localStorage.getItem('user');
+		
     if (user) {
-      this.$store.commit('setUser', JSON.parse(user));
+			this.$store.commit('setUser', JSON.parse(user));
     }
   },
 }).$mount('#app');
