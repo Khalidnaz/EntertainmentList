@@ -6,7 +6,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 
 Vue.use(VueApollo);
 
-const user = JSON.parse(localStorage.getItem('user'));
+const user = JSON.parse(localStorage.getItem('user')) || {};
 
 // HTTP connection to the API
 const httpLink = createHttpLink({

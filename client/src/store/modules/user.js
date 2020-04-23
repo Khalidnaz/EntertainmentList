@@ -48,6 +48,10 @@ const actions = {
     }
   },
   logout: ({ commit }) => commit('clearUser'),
+
+  // fetchWatchList: async ({ commit }) => {
+
+  // }
 };
 
 const mutations = {

@@ -1,40 +1,38 @@
 <template>
-  <v-container v-if="movieLoading" class="loading-container">
-    <v-progress-circular
-      :size="300"
-      :width="7"
-      indeterminate
-      color="accent"
-    ></v-progress-circular>
-  </v-container>
-  <v-container v-else>
-    <h1>Now Playing in Theaters</h1>
-    <v-row>
-      <v-col cols="3" v-for="now in nowPlaying" v-bind:key="now.id">
-        <Movie v-bind:movie="now" />
-      </v-col>
-    </v-row>
+  <v-container fluid>
+    <Loading v-bind:loading="movieLoading" />
+    <!-- replace this with my watch list -->
+    <!-- <v-container v-if="!movieLoading">
+      <h1>Now Playing in Theaters</h1>
+      <v-row>
+        <v-col cols="3" v-for="now in nowPlaying" v-bind:key="now.id">
+          <Movie v-bind:movie="now" />
+        </v-col>
+      </v-row>
+    </v-container> -->
   </v-container>
 </template>
 
 <script>
-import Movie from '../Movie/Movie.vue';
-import { mapGetters } from 'vuex';
+import Loading from "../Loading/Loading";
+// import Movie from "../Movie/Movie.vue";
+import { mapGetters } from "vuex";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Movie,
+    //Movie,
+    Loading
   },
   computed: {
-    ...mapGetters(['user', 'nowPlaying', 'movieLoading', 'topRated', 'genres']),
+    ...mapGetters(["user", "genres"])
   },
   created() {
     if (!this.user) {
-      this.$router.push('/login');
+      this.$router.push("/login");
     }
-    this.$store.dispatch('getGenres');
-    this.$store.dispatch('fetchNowPlaying');
-  },
+
+    // this.$store.dispatch("getGenres");
+  }
 };
 </script>
 

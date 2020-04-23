@@ -41,9 +41,9 @@ export default {
     ...mapGetters(['user']),
     sideNavOptions() {
       return [
-        { icon: 'mdi-view-dashboard', title: 'Now Playing', link: '/' },
-				{ icon: 'mdi-view-dashboard', title: 'Top Rated', link: '/topRated' },
-				{ icon: 'mdi-view-dashboard', title: 'Upcoming', link: '/upcoming' },
+        { icon: 'mdi-view-dashboard', title: 'Now Playing', link: '/movies?section=now_playing' },
+				{ icon: 'mdi-view-dashboard', title: 'Top Rated', link: '/movies?section=top_rated' },
+				{ icon: 'mdi-view-dashboard', title: 'Upcoming', link: '/movies?section=upcoming' },
 				{ icon: 'mdi-view-dashboard', title: 'My Watch List', link: '/watchlist' },
       ];
     },
