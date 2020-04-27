@@ -1,19 +1,18 @@
-import Vue from 'vue';
-import VueApollo from 'vue-apollo';
-import { ApolloClient } from 'apollo-client';
-import { createHttpLink } from 'apollo-link-http';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+import Vue from "vue";
+import VueApollo from "vue-apollo";
+import { ApolloClient } from "apollo-client";
+import { createHttpLink } from "apollo-link-http";
+import { InMemoryCache } from "apollo-cache-inmemory";
 
 Vue.use(VueApollo);
 
-const user = JSON.parse(localStorage.getItem('user')) || {};
+const user = JSON.parse(localStorage.getItem("user")) || {};
 
 // HTTP connection to the API
 const httpLink = createHttpLink({
-  // You should use an absolute URL here
-  uri: 'http://localhost:5000/graphql',
+  uri: "http://localhost:5000/graphql",
   headers: {
-    authorization: `Bearer ${user.token || ''}`,
+    authorization: `Bearer ${user.token || ""}`,
   },
 });
 
