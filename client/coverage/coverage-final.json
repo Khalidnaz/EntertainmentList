@@ -1,0 +1,1764 @@
+{
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/App.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/App.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 31, "column": 0 },
+        "end": { "line": 31, "column": null }
+      },
+      "1": {
+        "start": { "line": 32, "column": 0 },
+        "end": { "line": 32, "column": null }
+      },
+      "2": {
+        "start": { "line": 33, "column": 0 },
+        "end": { "line": 33, "column": null }
+      },
+      "3": {
+        "start": { "line": 43, "column": 0 },
+        "end": { "line": 47, "column": null }
+      },
+      "4": {
+        "start": { "line": 52, "column": 0 },
+        "end": { "line": 52, "column": null }
+      },
+      "5": {
+        "start": { "line": 54, "column": 0 },
+        "end": { "line": 54, "column": null }
+      },
+      "6": {
+        "start": { "line": 59, "column": 0 },
+        "end": { "line": 59, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 42, "column": 0 },
+          "end": { "line": 42, "column": null }
+        },
+        "loc": {
+          "start": { "line": 42, "column": 0 },
+          "end": { "line": 49, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 51, "column": 0 },
+          "end": { "line": 51, "column": null }
+        },
+        "loc": {
+          "start": { "line": 51, "column": 0 },
+          "end": { "line": 53, "column": null }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 54, "column": 0 },
+          "end": { "line": 54, "column": null }
+        },
+        "loc": {
+          "start": { "line": 54, "column": 0 },
+          "end": { "line": 54, "column": null }
+        }
+      },
+      "3": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 58, "column": 0 },
+          "end": { "line": 58, "column": null }
+        },
+        "loc": {
+          "start": { "line": 58, "column": 0 },
+          "end": { "line": 60, "column": null }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "b": {}
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/ProtectedRoute.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/ProtectedRoute.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 2 },
+        "end": { "line": 8, "column": 3 }
+      },
+      "1": {
+        "start": { "line": 5, "column": 4 },
+        "end": { "line": 5, "column": 29 }
+      },
+      "2": {
+        "start": { "line": 7, "column": 4 },
+        "end": { "line": 7, "column": 11 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 3, "column": 15 },
+          "end": { "line": 3, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 35 },
+          "end": { "line": 9, "column": 1 }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 4, "column": 2 },
+          "end": { "line": 8, "column": 3 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 4, "column": 2 },
+            "end": { "line": 8, "column": 3 }
+          },
+          {
+            "start": { "line": 4, "column": 2 },
+            "end": { "line": 8, "column": 3 }
+          }
+        ],
+        "line": 4
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0] },
+    "hash": "5a49768bc6f0ff2e0e208d5d204a1096d2a9a4b1"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/config.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/config.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 1, "column": 21 },
+        "end": { "line": 1, "column": 55 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "996ea09ded31acaa02402026704df20036223595"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/main.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/main.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 8, "column": 0 },
+        "end": { "line": 8, "column": 33 }
+      },
+      "1": {
+        "start": { "line": 10, "column": 0 },
+        "end": { "line": 23, "column": 18 }
+      },
+      "2": {
+        "start": { "line": 15, "column": 17 },
+        "end": { "line": 15, "column": 23 }
+      },
+      "3": {
+        "start": { "line": 17, "column": 15 },
+        "end": { "line": 17, "column": 43 }
+      },
+      "4": {
+        "start": { "line": 19, "column": 4 },
+        "end": { "line": 21, "column": 5 }
+      },
+      "5": {
+        "start": { "line": 20, "column": 3 },
+        "end": { "line": 20, "column": 51 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 15, "column": 10 },
+          "end": { "line": 15, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 15, "column": 17 },
+          "end": { "line": 15, "column": 23 }
+        },
+        "line": 15
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 16, "column": 2 },
+          "end": { "line": 16, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 16, "column": 12 },
+          "end": { "line": 22, "column": 3 }
+        },
+        "line": 16
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 19, "column": 4 },
+          "end": { "line": 21, "column": 5 }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 19, "column": 4 },
+            "end": { "line": 21, "column": 5 }
+          },
+          {
+            "start": { "line": 19, "column": 4 },
+            "end": { "line": 21, "column": 5 }
+          }
+        ],
+        "line": 19
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "f": { "0": 0, "1": 0 },
+    "b": { "0": [0, 0] },
+    "hash": "cb52073cb5b2b03e6708f7675f68949db8dfbbb8"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/router.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/router.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 12, "column": 0 },
+        "end": { "line": 12, "column": 16 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "8def825f6a7e1ce82bc6e135579b1d854fb846d9"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Login.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Login.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 71, "column": 0 },
+        "end": { "line": 71, "column": null }
+      },
+      "1": {
+        "start": { "line": 78, "column": 0 },
+        "end": { "line": 78, "column": null }
+      },
+      "2": {
+        "start": { "line": 83, "column": 0 },
+        "end": { "line": 85, "column": null }
+      },
+      "3": {
+        "start": { "line": 84, "column": 0 },
+        "end": { "line": 84, "column": null }
+      },
+      "4": {
+        "start": { "line": 89, "column": 0 },
+        "end": { "line": 89, "column": null }
+      },
+      "5": {
+        "start": { "line": 92, "column": 0 },
+        "end": { "line": 92, "column": null }
+      },
+      "6": {
+        "start": { "line": 93, "column": 0 },
+        "end": { "line": 93, "column": null }
+      },
+      "7": {
+        "start": { "line": 98, "column": 0 },
+        "end": { "line": 103, "column": null }
+      },
+      "8": {
+        "start": { "line": 99, "column": 0 },
+        "end": { "line": 99, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 77, "column": 0 },
+          "end": { "line": 77, "column": null }
+        },
+        "loc": {
+          "start": { "line": 77, "column": 0 },
+          "end": { "line": 79, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 82, "column": 0 },
+          "end": { "line": 82, "column": null }
+        },
+        "loc": {
+          "start": { "line": 82, "column": 0 },
+          "end": { "line": 86, "column": null }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 88, "column": 0 },
+          "end": { "line": 88, "column": null }
+        },
+        "loc": {
+          "start": { "line": 88, "column": 0 },
+          "end": { "line": 95, "column": null }
+        }
+      },
+      "3": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 92, "column": 0 },
+          "end": { "line": 92, "column": null }
+        },
+        "loc": {
+          "start": { "line": 92, "column": 0 },
+          "end": { "line": 92, "column": null }
+        }
+      },
+      "4": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 93, "column": 0 },
+          "end": { "line": 93, "column": null }
+        },
+        "loc": {
+          "start": { "line": 93, "column": 0 },
+          "end": { "line": 93, "column": null }
+        }
+      },
+      "5": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 97, "column": 0 },
+          "end": { "line": 97, "column": null }
+        },
+        "loc": {
+          "start": { "line": 97, "column": 0 },
+          "end": { "line": 104, "column": null }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 78, "column": 0 },
+          "end": { "line": 78, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 78, "column": 0 },
+            "end": { "line": 78, "column": null }
+          },
+          {
+            "start": { "line": 78, "column": 0 },
+            "end": { "line": 78, "column": null }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 83, "column": 0 },
+          "end": { "line": 85, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 83, "column": 0 },
+            "end": { "line": 85, "column": null }
+          },
+          {
+            "start": { "line": 83, "column": 0 },
+            "end": { "line": 85, "column": null }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 92, "column": 0 },
+          "end": { "line": 92, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 92, "column": 0 },
+            "end": { "line": 92, "column": null }
+          },
+          {
+            "start": { "line": 92, "column": 0 },
+            "end": { "line": 92, "column": null }
+          }
+        ]
+      },
+      "3": {
+        "loc": {
+          "start": { "line": 93, "column": 0 },
+          "end": { "line": 93, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 93, "column": 0 },
+            "end": { "line": 93, "column": null }
+          },
+          {
+            "start": { "line": 93, "column": 0 },
+            "end": { "line": 93, "column": null }
+          }
+        ]
+      },
+      "4": {
+        "loc": {
+          "start": { "line": 98, "column": 0 },
+          "end": { "line": 103, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 98, "column": 0 },
+            "end": { "line": 103, "column": null }
+          },
+          {
+            "start": { "line": 98, "column": 0 },
+            "end": { "line": 103, "column": null }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Register.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Register.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 104, "column": 0 },
+        "end": { "line": 104, "column": null }
+      },
+      "1": {
+        "start": { "line": 113, "column": 0 },
+        "end": { "line": 115, "column": null }
+      },
+      "2": {
+        "start": { "line": 114, "column": 0 },
+        "end": { "line": 114, "column": null }
+      },
+      "3": {
+        "start": { "line": 119, "column": 0 },
+        "end": { "line": 119, "column": null }
+      },
+      "4": {
+        "start": { "line": 125, "column": 0 },
+        "end": { "line": 125, "column": null }
+      },
+      "5": {
+        "start": { "line": 126, "column": 0 },
+        "end": { "line": 126, "column": null }
+      },
+      "6": {
+        "start": { "line": 127, "column": 0 },
+        "end": { "line": 127, "column": null }
+      },
+      "7": {
+        "start": { "line": 131, "column": 0 },
+        "end": { "line": 131, "column": null }
+      },
+      "8": {
+        "start": { "line": 142, "column": 0 },
+        "end": { "line": 152, "column": null }
+      },
+      "9": {
+        "start": { "line": 146, "column": 0 },
+        "end": { "line": 146, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 112, "column": 0 },
+          "end": { "line": 112, "column": null }
+        },
+        "loc": {
+          "start": { "line": 112, "column": 0 },
+          "end": { "line": 116, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 118, "column": 0 },
+          "end": { "line": 118, "column": null }
+        },
+        "loc": {
+          "start": { "line": 118, "column": 0 },
+          "end": { "line": 139, "column": null }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 125, "column": 0 },
+          "end": { "line": 125, "column": null }
+        },
+        "loc": {
+          "start": { "line": 125, "column": 0 },
+          "end": { "line": 125, "column": null }
+        }
+      },
+      "3": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 126, "column": 0 },
+          "end": { "line": 126, "column": null }
+        },
+        "loc": {
+          "start": { "line": 126, "column": 0 },
+          "end": { "line": 126, "column": null }
+        }
+      },
+      "4": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 127, "column": 0 },
+          "end": { "line": 127, "column": null }
+        },
+        "loc": {
+          "start": { "line": 127, "column": 0 },
+          "end": { "line": 127, "column": null }
+        }
+      },
+      "5": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": { "line": 131, "column": 0 },
+          "end": { "line": 131, "column": null }
+        },
+        "loc": {
+          "start": { "line": 131, "column": 0 },
+          "end": { "line": 131, "column": null }
+        }
+      },
+      "6": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": { "line": 141, "column": 0 },
+          "end": { "line": 141, "column": null }
+        },
+        "loc": {
+          "start": { "line": 141, "column": 0 },
+          "end": { "line": 153, "column": null }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 113, "column": 0 },
+          "end": { "line": 115, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 113, "column": 0 },
+            "end": { "line": 115, "column": null }
+          },
+          {
+            "start": { "line": 113, "column": 0 },
+            "end": { "line": 115, "column": null }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 125, "column": 0 },
+          "end": { "line": 125, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 125, "column": 0 },
+            "end": { "line": 125, "column": null }
+          },
+          {
+            "start": { "line": 125, "column": 0 },
+            "end": { "line": 125, "column": null }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": { "line": 126, "column": 0 },
+          "end": { "line": 126, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 126, "column": 0 },
+            "end": { "line": 126, "column": null }
+          },
+          {
+            "start": { "line": 126, "column": 0 },
+            "end": { "line": 126, "column": null }
+          }
+        ]
+      },
+      "3": {
+        "loc": {
+          "start": { "line": 127, "column": 0 },
+          "end": { "line": 127, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 127, "column": 0 },
+            "end": { "line": 127, "column": null }
+          },
+          {
+            "start": { "line": 127, "column": 0 },
+            "end": { "line": 127, "column": null }
+          }
+        ]
+      },
+      "4": {
+        "loc": {
+          "start": { "line": 131, "column": 0 },
+          "end": { "line": 131, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 131, "column": 0 },
+            "end": { "line": 131, "column": null }
+          },
+          {
+            "start": { "line": 131, "column": 0 },
+            "end": { "line": 131, "column": null }
+          }
+        ]
+      },
+      "5": {
+        "loc": {
+          "start": { "line": 142, "column": 0 },
+          "end": { "line": 152, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 142, "column": 0 },
+            "end": { "line": 152, "column": null }
+          },
+          {
+            "start": { "line": 142, "column": 0 },
+            "end": { "line": 152, "column": null }
+          }
+        ]
+      },
+      "6": {
+        "loc": {
+          "start": { "line": 142, "column": 0 },
+          "end": { "line": 142, "column": null }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 142, "column": 0 },
+            "end": { "line": 142, "column": null }
+          },
+          {
+            "start": { "line": 142, "column": 0 },
+            "end": { "line": 142, "column": null }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "b": {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0]
+    }
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Home/Home.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Home/Home.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 17, "column": 0 },
+        "end": { "line": 17, "column": null }
+      },
+      "1": {
+        "start": { "line": 19, "column": 0 },
+        "end": { "line": 19, "column": null }
+      },
+      "2": {
+        "start": { "line": 30, "column": 0 },
+        "end": { "line": 32, "column": null }
+      },
+      "3": {
+        "start": { "line": 31, "column": 0 },
+        "end": { "line": 31, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 29, "column": 0 },
+          "end": { "line": 29, "column": null }
+        },
+        "loc": {
+          "start": { "line": 29, "column": 0 },
+          "end": { "line": 35, "column": null }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 30, "column": 0 },
+          "end": { "line": 32, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 30, "column": 0 },
+            "end": { "line": 32, "column": null }
+          },
+          {
+            "start": { "line": 30, "column": 0 },
+            "end": { "line": 32, "column": null }
+          }
+        ]
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/Movie.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/Movie.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 36, "column": 0 },
+        "end": { "line": 36, "column": null }
+      },
+      "1": {
+        "start": { "line": 37, "column": 0 },
+        "end": { "line": 37, "column": null }
+      },
+      "2": {
+        "start": { "line": 48, "column": 0 },
+        "end": { "line": 48, "column": null }
+      },
+      "3": {
+        "start": { "line": 49, "column": 0 },
+        "end": { "line": 49, "column": null }
+      },
+      "4": {
+        "start": { "line": 52, "column": 0 },
+        "end": { "line": 52, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 47, "column": 0 },
+          "end": { "line": 47, "column": null }
+        },
+        "loc": {
+          "start": { "line": 47, "column": 0 },
+          "end": { "line": 50, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 51, "column": 0 },
+          "end": { "line": 51, "column": null }
+        },
+        "loc": {
+          "start": { "line": 51, "column": 0 },
+          "end": { "line": 53, "column": null }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 52, "column": 0 },
+          "end": { "line": 52, "column": null }
+        },
+        "loc": {
+          "start": { "line": 52, "column": 0 },
+          "end": { "line": 52, "column": null }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+    "f": { "0": 0, "1": 0, "2": 0 },
+    "b": {}
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/MovieList.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/MovieList.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 16, "column": 0 },
+        "end": { "line": 16, "column": null }
+      },
+      "1": {
+        "start": { "line": 17, "column": 0 },
+        "end": { "line": 17, "column": null }
+      },
+      "2": {
+        "start": { "line": 18, "column": 0 },
+        "end": { "line": 18, "column": null }
+      },
+      "3": {
+        "start": { "line": 28, "column": 0 },
+        "end": { "line": 28, "column": null }
+      },
+      "4": {
+        "start": { "line": 36, "column": 0 },
+        "end": { "line": 38, "column": null }
+      },
+      "5": {
+        "start": { "line": 37, "column": 0 },
+        "end": { "line": 37, "column": null }
+      },
+      "6": {
+        "start": { "line": 40, "column": 0 },
+        "end": { "line": 40, "column": null }
+      },
+      "7": {
+        "start": { "line": 41, "column": 0 },
+        "end": { "line": 41, "column": null }
+      },
+      "8": {
+        "start": { "line": 42, "column": 0 },
+        "end": { "line": 42, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 27, "column": 0 },
+          "end": { "line": 27, "column": null }
+        },
+        "loc": {
+          "start": { "line": 27, "column": 0 },
+          "end": { "line": 33, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 35, "column": 0 },
+          "end": { "line": 35, "column": null }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 0 },
+          "end": { "line": 43, "column": null }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 28, "column": 0 },
+          "end": { "line": 28, "column": null }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": { "line": 28, "column": 0 },
+            "end": { "line": 28, "column": null }
+          },
+          {
+            "start": { "line": 28, "column": 0 },
+            "end": { "line": 28, "column": null }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 36, "column": 0 },
+          "end": { "line": 38, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 36, "column": 0 },
+            "end": { "line": 38, "column": null }
+          },
+          {
+            "start": { "line": 36, "column": 0 },
+            "end": { "line": 38, "column": null }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "f": { "0": 0, "1": 0 },
+    "b": { "0": [0, 0], "1": [0, 0] }
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/Navbar.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/Navbar.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 45, "column": 0 },
+        "end": { "line": 60, "column": null }
+      },
+      "1": {
+        "start": { "line": 46, "column": 0 },
+        "end": { "line": 52, "column": null }
+      },
+      "2": {
+        "start": { "line": 50, "column": 0 },
+        "end": { "line": 50, "column": null }
+      },
+      "3": {
+        "start": { "line": 55, "column": 0 },
+        "end": { "line": 55, "column": null }
+      },
+      "4": {
+        "start": { "line": 59, "column": 0 },
+        "end": { "line": 59, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 44, "column": 0 },
+          "end": { "line": 44, "column": null }
+        },
+        "loc": {
+          "start": { "line": 44, "column": 0 },
+          "end": { "line": 61, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 50, "column": 0 },
+          "end": { "line": 50, "column": null }
+        },
+        "loc": {
+          "start": { "line": 50, "column": 0 },
+          "end": { "line": 50, "column": null }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 55, "column": 0 },
+          "end": { "line": 55, "column": null }
+        },
+        "loc": {
+          "start": { "line": 55, "column": 0 },
+          "end": { "line": 55, "column": null }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 45, "column": 0 },
+          "end": { "line": 60, "column": null }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": { "line": 45, "column": 0 },
+            "end": { "line": 60, "column": null }
+          },
+          {
+            "start": { "line": 45, "column": 0 },
+            "end": { "line": 60, "column": null }
+          }
+        ]
+      }
+    },
+    "s": { "0": 1, "1": 1, "2": 0, "3": 0, "4": 0 },
+    "f": { "0": 1, "1": 0, "2": 0 },
+    "b": { "0": [1, 0] }
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/SideDrawer.vue": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/SideDrawer.vue",
+    "statementMap": {
+      "0": {
+        "start": { "line": 28, "column": 0 },
+        "end": { "line": 28, "column": null }
+      },
+      "1": {
+        "start": { "line": 31, "column": 0 },
+        "end": { "line": 31, "column": null }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 27, "column": 0 },
+          "end": { "line": 27, "column": null }
+        },
+        "loc": {
+          "start": { "line": 27, "column": 0 },
+          "end": { "line": 29, "column": null }
+        }
+      },
+      "1": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 30, "column": 0 },
+          "end": { "line": 30, "column": null }
+        },
+        "loc": {
+          "start": { "line": 30, "column": 0 },
+          "end": { "line": 32, "column": null }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0, "1": 0 },
+    "b": {}
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userMutations.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userMutations.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 24 },
+        "end": { "line": 23, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 25, "column": 27 },
+        "end": { "line": 35, "column": 1 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": {},
+    "b": {},
+    "hash": "bac82db80d0bd27a6c0e93a528feea92decf92e2"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userQueries.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userQueries.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "hash": "d869037f26b347f4f61b8c02f1e1147c1ee54f41"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/apollo.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/apollo.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 0 },
+        "end": { "line": 7, "column": 19 }
+      },
+      "1": {
+        "start": { "line": 9, "column": 13 },
+        "end": { "line": 9, "column": 59 }
+      },
+      "2": {
+        "start": { "line": 12, "column": 17 },
+        "end": { "line": 18, "column": 2 }
+      },
+      "3": {
+        "start": { "line": 21, "column": 14 },
+        "end": { "line": 21, "column": 33 }
+      },
+      "4": {
+        "start": { "line": 24, "column": 28 },
+        "end": { "line": 27, "column": 2 }
+      },
+      "5": {
+        "start": { "line": 29, "column": 23 },
+        "end": { "line": 31, "column": 2 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 9, "column": 13 },
+          "end": { "line": 9, "column": 59 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 9, "column": 13 },
+            "end": { "line": 9, "column": 53 }
+          },
+          {
+            "start": { "line": 9, "column": 57 },
+            "end": { "line": 9, "column": 59 }
+          }
+        ],
+        "line": 9
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 16, "column": 29 },
+          "end": { "line": 16, "column": 45 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 16, "column": 29 },
+            "end": { "line": 16, "column": 39 }
+          },
+          {
+            "start": { "line": 16, "column": 43 },
+            "end": { "line": 16, "column": 45 }
+          }
+        ],
+        "line": 16
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "f": {},
+    "b": { "0": [0, 0], "1": [0, 0] },
+    "hash": "dab166e749042eaa9ff0c426c3e435d6c76c3d40"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/vuetify.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/vuetify.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 0 },
+        "end": { "line": 4, "column": 17 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "621ce1db506486ae0c011caf65fd278fe70234fa"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/store/store.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/store/store.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 6, "column": 0 },
+        "end": { "line": 6, "column": 14 }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {},
+    "hash": "4a4d810a68f4ca510872c8e9aac688dea4abd347"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/movies.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/movies.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 17 },
+        "end": { "line": 4, "column": 47 }
+      },
+      "1": {
+        "start": { "line": 6, "column": 14 },
+        "end": { "line": 10, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 12, "column": 16 },
+        "end": { "line": 16, "column": 1 }
+      },
+      "3": {
+        "start": { "line": 13, "column": 21 },
+        "end": { "line": 13, "column": 33 }
+      },
+      "4": {
+        "start": { "line": 14, "column": 27 },
+        "end": { "line": 14, "column": 45 }
+      },
+      "5": {
+        "start": { "line": 15, "column": 21 },
+        "end": { "line": 15, "column": 33 }
+      },
+      "6": {
+        "start": { "line": 18, "column": 16 },
+        "end": { "line": 43, "column": 1 }
+      },
+      "7": {
+        "start": { "line": 20, "column": 4 },
+        "end": { "line": 20, "column": 36 }
+      },
+      "8": {
+        "start": { "line": 22, "column": 21 },
+        "end": { "line": 24, "column": 5 }
+      },
+      "9": {
+        "start": { "line": 26, "column": 4 },
+        "end": { "line": 26, "column": 42 }
+      },
+      "10": {
+        "start": { "line": 27, "column": 4 },
+        "end": { "line": 27, "column": 37 }
+      },
+      "11": {
+        "start": { "line": 31, "column": 21 },
+        "end": { "line": 33, "column": 5 }
+      },
+      "12": {
+        "start": { "line": 35, "column": 22 },
+        "end": { "line": 35, "column": 24 }
+      },
+      "13": {
+        "start": { "line": 37, "column": 4 },
+        "end": { "line": 39, "column": 7 }
+      },
+      "14": {
+        "start": { "line": 38, "column": 6 },
+        "end": { "line": 38, "column": 39 }
+      },
+      "15": {
+        "start": { "line": 41, "column": 4 },
+        "end": { "line": 41, "column": 35 }
+      },
+      "16": {
+        "start": { "line": 45, "column": 18 },
+        "end": { "line": 51, "column": 1 }
+      },
+      "17": {
+        "start": { "line": 46, "column": 40 },
+        "end": { "line": 46, "column": 68 }
+      },
+      "18": {
+        "start": { "line": 47, "column": 36 },
+        "end": { "line": 47, "column": 58 }
+      },
+      "19": {
+        "start": { "line": 48, "column": 36 },
+        "end": { "line": 48, "column": 58 }
+      },
+      "20": {
+        "start": { "line": 49, "column": 38 },
+        "end": { "line": 49, "column": 60 }
+      },
+      "21": {
+        "start": { "line": 50, "column": 34 },
+        "end": { "line": 50, "column": 56 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 13, "column": 10 },
+          "end": { "line": 13, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 13, "column": 21 },
+          "end": { "line": 13, "column": 33 }
+        },
+        "line": 13
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 14, "column": 16 },
+          "end": { "line": 14, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 27 },
+          "end": { "line": 14, "column": 45 }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 15, "column": 10 },
+          "end": { "line": 15, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 15, "column": 21 },
+          "end": { "line": 15, "column": 33 }
+        },
+        "line": 15
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 19, "column": 15 },
+          "end": { "line": 19, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 19, "column": 59 },
+          "end": { "line": 28, "column": 3 }
+        },
+        "line": 19
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 30, "column": 13 },
+          "end": { "line": 30, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 30, "column": 35 },
+          "end": { "line": 42, "column": 3 }
+        },
+        "line": 30
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 37, "column": 24 },
+          "end": { "line": 37, "column": 25 }
+        },
+        "loc": {
+          "start": { "line": 37, "column": 35 },
+          "end": { "line": 39, "column": 5 }
+        },
+        "line": 37
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 46, "column": 19 },
+          "end": { "line": 46, "column": 20 }
+        },
+        "loc": {
+          "start": { "line": 46, "column": 40 },
+          "end": { "line": 46, "column": 68 }
+        },
+        "line": 46
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": { "line": 47, "column": 15 },
+          "end": { "line": 47, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 47, "column": 36 },
+          "end": { "line": 47, "column": 58 }
+        },
+        "line": 47
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": { "line": 48, "column": 15 },
+          "end": { "line": 48, "column": 16 }
+        },
+        "loc": {
+          "start": { "line": 48, "column": 36 },
+          "end": { "line": 48, "column": 58 }
+        },
+        "line": 48
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": { "line": 49, "column": 17 },
+          "end": { "line": 49, "column": 18 }
+        },
+        "loc": {
+          "start": { "line": 49, "column": 38 },
+          "end": { "line": 49, "column": 60 }
+        },
+        "line": 49
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": { "line": 50, "column": 13 },
+          "end": { "line": 50, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 50, "column": 34 },
+          "end": { "line": 50, "column": 56 }
+        },
+        "line": 50
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 19, "column": 43 },
+          "end": { "line": 19, "column": 54 }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": { "line": 19, "column": 53 },
+            "end": { "line": 19, "column": 54 }
+          }
+        ],
+        "line": 19
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    "b": { "0": [0] },
+    "hash": "639a0af0e12a92df468af06df5f753c503db4972"
+  },
+  "/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/user.js": {
+    "path": "/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/user.js",
+    "statementMap": {
+      "0": {
+        "start": { "line": 5, "column": 14 },
+        "end": { "line": 10, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 12, "column": 16 },
+        "end": { "line": 16, "column": 1 }
+      },
+      "2": {
+        "start": { "line": 13, "column": 19 },
+        "end": { "line": 13, "column": 29 }
+      },
+      "3": {
+        "start": { "line": 14, "column": 22 },
+        "end": { "line": 14, "column": 35 }
+      },
+      "4": {
+        "start": { "line": 15, "column": 20 },
+        "end": { "line": 15, "column": 31 }
+      },
+      "5": {
+        "start": { "line": 18, "column": 16 },
+        "end": { "line": 55, "column": 1 }
+      },
+      "6": {
+        "start": { "line": 20, "column": 4 },
+        "end": { "line": 20, "column": 31 }
+      },
+      "7": {
+        "start": { "line": 22, "column": 4 },
+        "end": { "line": 31, "column": 5 }
+      },
+      "8": {
+        "start": { "line": 23, "column": 6 },
+        "end": { "line": 26, "column": 9 }
+      },
+      "9": {
+        "start": { "line": 28, "column": 6 },
+        "end": { "line": 28, "column": 34 }
+      },
+      "10": {
+        "start": { "line": 30, "column": 6 },
+        "end": { "line": 30, "column": 38 }
+      },
+      "11": {
+        "start": { "line": 34, "column": 4 },
+        "end": { "line": 34, "column": 31 }
+      },
+      "12": {
+        "start": { "line": 36, "column": 4 },
+        "end": { "line": 48, "column": 5 }
+      },
+      "13": {
+        "start": { "line": 37, "column": 23 },
+        "end": { "line": 40, "column": 8 }
+      },
+      "14": {
+        "start": { "line": 42, "column": 6 },
+        "end": { "line": 42, "column": 34 }
+      },
+      "15": {
+        "start": { "line": 43, "column": 6 },
+        "end": { "line": 43, "column": 36 }
+      },
+      "16": {
+        "start": { "line": 44, "column": 6 },
+        "end": { "line": 44, "column": 63 }
+      },
+      "17": {
+        "start": { "line": 45, "column": 6 },
+        "end": { "line": 45, "column": 23 }
+      },
+      "18": {
+        "start": { "line": 47, "column": 6 },
+        "end": { "line": 47, "column": 38 }
+      },
+      "19": {
+        "start": { "line": 50, "column": 26 },
+        "end": { "line": 50, "column": 45 }
+      },
+      "20": {
+        "start": { "line": 57, "column": 18 },
+        "end": { "line": 62, "column": 1 }
+      },
+      "21": {
+        "start": { "line": 58, "column": 32 },
+        "end": { "line": 58, "column": 52 }
+      },
+      "22": {
+        "start": { "line": 59, "column": 35 },
+        "end": { "line": 59, "column": 58 }
+      },
+      "23": {
+        "start": { "line": 60, "column": 33 },
+        "end": { "line": 60, "column": 54 }
+      },
+      "24": {
+        "start": { "line": 61, "column": 25 },
+        "end": { "line": 61, "column": 42 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 13, "column": 8 },
+          "end": { "line": 13, "column": 9 }
+        },
+        "loc": {
+          "start": { "line": 13, "column": 19 },
+          "end": { "line": 13, "column": 29 }
+        },
+        "line": 13
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": { "line": 14, "column": 11 },
+          "end": { "line": 14, "column": 12 }
+        },
+        "loc": {
+          "start": { "line": 14, "column": 22 },
+          "end": { "line": 14, "column": 35 }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": { "line": 15, "column": 9 },
+          "end": { "line": 15, "column": 10 }
+        },
+        "loc": {
+          "start": { "line": 15, "column": 20 },
+          "end": { "line": 15, "column": 31 }
+        },
+        "line": 15
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": { "line": 19, "column": 16 },
+          "end": { "line": 19, "column": 17 }
+        },
+        "loc": {
+          "start": { "line": 19, "column": 47 },
+          "end": { "line": 32, "column": 3 }
+        },
+        "line": 19
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": { "line": 33, "column": 9 },
+          "end": { "line": 33, "column": 10 }
+        },
+        "loc": {
+          "start": { "line": 33, "column": 40 },
+          "end": { "line": 49, "column": 3 }
+        },
+        "line": 33
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": { "line": 50, "column": 10 },
+          "end": { "line": 50, "column": 11 }
+        },
+        "loc": {
+          "start": { "line": 50, "column": 26 },
+          "end": { "line": 50, "column": 45 }
+        },
+        "line": 50
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": { "line": 58, "column": 11 },
+          "end": { "line": 58, "column": 12 }
+        },
+        "loc": {
+          "start": { "line": 58, "column": 32 },
+          "end": { "line": 58, "column": 52 }
+        },
+        "line": 58
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": { "line": 59, "column": 14 },
+          "end": { "line": 59, "column": 15 }
+        },
+        "loc": {
+          "start": { "line": 59, "column": 35 },
+          "end": { "line": 59, "column": 58 }
+        },
+        "line": 59
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": { "line": 60, "column": 12 },
+          "end": { "line": 60, "column": 13 }
+        },
+        "loc": {
+          "start": { "line": 60, "column": 33 },
+          "end": { "line": 60, "column": 54 }
+        },
+        "line": 60
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": { "line": 61, "column": 13 },
+          "end": { "line": 61, "column": 14 }
+        },
+        "loc": {
+          "start": { "line": 61, "column": 25 },
+          "end": { "line": 61, "column": 42 }
+        },
+        "line": 61
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    "b": {},
+    "hash": "403ad8bfcc5758134fd3adbcbce1e0330d1b39b1"
+  }
+}

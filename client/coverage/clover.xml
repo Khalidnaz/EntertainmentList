@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1587974296814" clover="3.2.0">
+  <project timestamp="1587974296814" name="All files">
+    <metrics statements="119" coveredstatements="2" conditionals="41" coveredconditionals="1" methods="52" coveredmethods="1" elements="212" coveredelements="4" complexity="0" loc="119" ncloc="119" packages="9" files="19" classes="19"/>
+    <package name="src">
+      <metrics statements="18" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <file name="App.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/App.vue">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+      <file name="ProtectedRoute.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/ProtectedRoute.js">
+        <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="config.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/config.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="main.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/main.js">
+        <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="router.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/router.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Auth">
+      <metrics statements="19" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="13" coveredmethods="0"/>
+      <file name="Login.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Login.vue">
+        <metrics statements="9" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="78" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="83" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="92" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="98" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="99" count="0" type="stmt"/>
+      </file>
+      <file name="Register.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Auth/Register.vue">
+        <metrics statements="10" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="113" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="125" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="126" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="127" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="131" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="142" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="146" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Home">
+      <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Home.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Home/Home.vue">
+        <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Movie">
+      <metrics statements="14" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="Movie.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/Movie.vue">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+      <file name="MovieList.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Movie/MovieList.vue">
+        <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Navigation">
+      <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="1"/>
+      <file name="Navbar.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/Navbar.vue">
+        <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+      <file name="SideDrawer.vue" path="/Users/gilwong/Desktop/EntertainmentList/client/src/components/Navigation/SideDrawer.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.graphql.user">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="userMutations.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userMutations.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="userQueries.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/graphql/user/userQueries.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.plugins">
+      <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="apollo.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/apollo.js">
+        <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="vuetify.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/plugins/vuetify.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="store.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/store/store.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store.modules">
+      <metrics statements="47" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="21" coveredmethods="0"/>
+      <file name="movies.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/movies.js">
+        <metrics statements="22" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+      <file name="user.js" path="/Users/gilwong/Desktop/EntertainmentList/client/src/store/modules/user.js">
+        <metrics statements="25" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
