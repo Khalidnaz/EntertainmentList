@@ -1,7 +1,7 @@
-import { API_KEY } from '../../config';
-import axios from 'axios';
+import { API_KEY } from "../../config";
+import axios from "axios";
 
-const BASE_URL = 'https://api.themoviedb.org/3';
+const BASE_URL = "https://api.themoviedb.org/3";
 
 const state = {
   movies: [],
@@ -17,14 +17,14 @@ const getters = {
 
 const actions = {
   fetchMovies: async ({ commit }, section, pageNum = 1) => {
-    commit('setMovieLoading', true);
+    commit("setMovieLoading", true);
 
     const { data } = await axios.get(
       `${BASE_URL}/movie/${section}?api_key=${API_KEY}&language=en-US&page=${pageNum}`
     );
 
-    commit('setNowPlaying', data.results);
-    commit('setMovieLoading', false);
+    commit("setNowPlaying", data.results);
+    commit("setMovieLoading", false);
   },
 
   getGenres: async ({ commit }) => {
@@ -37,8 +37,8 @@ const actions = {
     data.genres.forEach((genre) => {
       genreHash[genre.id] = genre.name;
     });
-		
-    commit('setGenres', genreHash);
+
+    commit("setGenres", genreHash);
   },
 };
 

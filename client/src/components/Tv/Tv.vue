@@ -1,16 +1,16 @@
 <template>
   <v-card raised class="card">
-    <v-card-title>{{ movie.title }}</v-card-title>
+    <v-card-title>{{ tv.name }}</v-card-title>
     <v-img class="white--text align-end" height="200px" v-bind:src="photoUrl" />
 
     <v-row class="details">
       <v-col cols="5">
-        <label>Release Date:</label>
-        <p>{{ new Date(movie.release_date).toDateString() }}</p>
+        <label>Original Release Date:</label>
+        <p>{{ new Date(tv.first_air_date).toDateString() }}</p>
       </v-col>
       <v-col cols="3">
         <label>Rating:</label>
-        <p>{{ movie.vote_average }}</p>
+        <p>{{ tv.vote_average }}</p>
       </v-col>
       <v-col cols="3">
         <v-tooltip bottom>
@@ -24,32 +24,32 @@
       </v-col>
     </v-row>
 
-    <Genres v-bind:movieGenres="movieGenres" />
+    <tvGenres v-bind:tvgenres="tvgenres" />
 
     <v-card-text class="text--primary">
-      <div>{{ movie.overview }}</div>
+      <div>{{ tv.overview }}</div>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import Genres from "./Genres";
+import TvGenres from "./TvGenres";
 import { mapGetters } from "vuex";
 
 export default {
-  name: "Movie",
+  name: "Tv",
   components: {
-    Genres,
+    TvGenres,
   },
-  props: ["movie"],
+  props: ["tv"],
   computed: {
-    ...mapGetters(["genres"]),
+    ...mapGetters(["tvgenres"]),
     photoUrl() {
       const baseUrl = "http://image.tmdb.org/t/p/w185/";
-      return `${baseUrl}${this.movie.poster_path}`;
+      return `${baseUrl}${this.tv.poster_path}`;
     },
-    movieGenres() {
-      return this.movie.genre_ids.map((id) => this.genres[id]);
+    tvGenres() {
+      return this.tv.genre_ids.map((id) => this.genres[id]);
     },
   },
 };

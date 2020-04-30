@@ -60,7 +60,7 @@ namespace EntertainmentList.Migrations
                     b.ToTable("tvshows");
                 });
 
-            modelBuilder.Entity("api.Models.User", b =>
+            modelBuilder.Entity("api.Models.Users.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
