@@ -14,8 +14,8 @@
 
 <script>
 export default {
-  Name: 'Genres',
-  props: ['movieGenres'],
+  Name: "Genres",
+  props: ["movieGenres"],
 };
 </script>
 

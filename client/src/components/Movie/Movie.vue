@@ -24,7 +24,7 @@
       </v-col>
     </v-row>
 
-		<Genres v-bind:movieGenres='movieGenres' />
+    <Genres v-bind:movieGenres="movieGenres" />
 
     <v-card-text class="text--primary">
       <div>{{ movie.overview }}</div>
@@ -33,19 +33,19 @@
 </template>
 
 <script>
-import Genres from './Genres';
-import { mapGetters } from 'vuex';
+import Genres from "../Genres/Genres";
+import { mapGetters } from "vuex";
 
 export default {
-	name: 'Movie',
-	components: {
-		Genres
-	},
-  props: ['movie'],
+  name: "Movie",
+  components: {
+    Genres,
+  },
+  props: ["movie"],
   computed: {
-    ...mapGetters(['genres']),
+    ...mapGetters(["genres"]),
     photoUrl() {
-      const baseUrl = 'http://image.tmdb.org/t/p/w185/';
+      const baseUrl = "http://image.tmdb.org/t/p/w185/";
       return `${baseUrl}${this.movie.poster_path}`;
     },
     movieGenres() {
@@ -68,5 +68,4 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
-
 </style>
