@@ -1,4 +1,5 @@
 using api.Models;
+using api.Models.Movies;
 using api.Models.Users;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using HotChocolate.AspNetCore.Authorization;
 
@@ -25,7 +27,7 @@ namespace api.Models.Users
 		public DateTime Created { get; set; }
 
 		//add movies props
-		//public IEnumerable MyMovies { get; set; }
+		public IEnumerable WatchList { get; set; }
 
 		public User()
 		{
